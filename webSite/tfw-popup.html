@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹窗</title>
+	<link rel="stylesheet" href="css/tfwplugins/base.css" />
+	<link rel="stylesheet" href="css/tfwplugins/tfwalert.css" />
+</head>
+<body>
+	<button type="button" style="z-index: 2000;" onclick="tan();">弹到中间</button>
+	<button type="button" style="z-index: 2000;" onclick="tanfeedback();">弹tanfeedback</button>
+	<script src="js/jquery/jquery-1.11.3.js"></script>
+	<script src="js/tfwplugins.js"></script>
+	<script>
+		function tan(){
+			tfwplugins.showtfwalert("images/tfwxiaoren1.png", "你确定要删除xxx么", function(){
+				console.log("123");
+				var a = 1;
+				alert(a + a);
+			});
+		}
+		
+		function tanfeedback(){
+			tfwplugins.showtfwfeedback("images", "纠错", function(){
+				alert($("#feedbackValue").val());
+			});
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,1193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>General Form Elements |</title>
+	<!-- 告诉浏览器响应屏幕宽度 -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- Bootstrap 3.3.5 -->
+	<link href="library/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Ionicons -->
+	 <link href="library/ionicons/css/ionicons.min.css" rel="stylesheet">
+	
+	<!-- 主体样式 -->
+	<link rel="stylesheet" href="css/Admin.min.css">
+	<!--换肤样式-->
+	<link rel="stylesheet" href="css/skins/_all-skins.min.css">
+
+	<!-- HTML5的插件和respond.js IE8支持HTML5元素和媒体查询 -->
+	<!--[if lt IE 9]>
+	<script src="js/Bsiehtc/html5shiv.min.js"></script>
+	<script src="js/Bsiehtc/respond.min.js"></script>
+	<![endif]-->
+
+	<!--本页相关-->
+	<link rel="stylesheet" href="library/uploadify/uploadify.css">
+	<link rel="stylesheet" href="css/mianAdmin.css">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+		<!-- Main Header -->
+		<header class="main-header">
+
+			<!-- Logo -->
+			<a href="index.html" class="logo">
+				<!-- 迷你标志的侧边栏小50x50像素 -->
+				<span class="logo-mini"><b>I</b>fdoo</span>
+				<!-- 正常状态和移动设备的标识 -->
+				<span class="logo-lg"> <b>Admin</b>
+					Ifdoo
+				</span>
+			</a>
+
+			<!-- 标题导航栏 -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<!-- 侧边栏切换按钮-->
+				<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+					<span class="sr-only">切换导航</span>
+				</a>
+				<!-- 导航栏右键菜单 -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<!-- 消息菜单 -->
+						<li class="dropdown messages-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-envelope-o"></i>
+								<span class="label label-success">4</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="header">你有4条信息</li>
+								<li>
+
+									<ul class="menu">
+										<li>
+											<!-- start message -->
+											<a href="#">
+												<div class="pull-left">
+													<!-- User Image -->
+													<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image"></div>
+												<!-- 消息的标题和时间戳 -->
+												<h4>
+													官方团队
+													<small> <i class="fa fa-clock-o"></i>
+														5 mins
+													</small>
+												</h4>
+												<!-- The message -->
+												<p>为什么不买一个新的炫酷的主题?</p>
+											</a>
+										</li>
+										<!-- end message -->
+									</ul>
+									<!-- /.menu -->
+								</li>
+								<li class="footer">
+									<a href="#">看到所有的信息</a>
+								</li>
+							</ul>
+						</li>
+						<!-- /.messages-menu -->
+
+						<!-- 通知菜单 -->
+						<li class="dropdown notifications-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-bell-o"></i>
+								<span class="label label-warning">10</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="header">你有10个通知</li>
+								<li>
+
+									<ul class="menu">
+										<li>
+											<!-- start notification -->
+											<a href="#">
+												<i class="fa fa-users text-aqua"></i>
+												今天有5个新成员加入
+											</a>
+										</li>
+										<!-- end notification -->
+									</ul>
+								</li>
+								<li class="footer">
+									<a href="#">查看所有</a>
+								</li>
+							</ul>
+						</li>
+						<!-- 任务菜单 -->
+						<li class="dropdown tasks-menu">
+							<!-- Menu Toggle Button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-flag-o"></i>
+								<span class="label label-danger">9</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="header">你有9个任务</li>
+								<li>
+
+									<ul class="menu">
+										<li>
+											<!-- Task item -->
+											<a href="#">
+												<!-- 任务标题和进展文本 -->
+												<h3>
+													设计一些按钮
+													<small class="pull-right">20%</small>
+												</h3>
+												<!-- 进度条 -->
+												<div class="progress xs">
+													<!-- 改变CSS宽度属性模拟研究进展 -->
+													<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+														<span class="sr-only">20% 完成</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<!-- end task item -->
+									</ul>
+								</li>
+								<li class="footer">
+									<a href="#">查看所有任务</a>
+								</li>
+							</ul>
+						</li>
+						<!-- 用户帐户菜单 -->
+						<li class="dropdown user user-menu">
+							<!-- Menu Toggle Button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<!-- 在导航栏的用户图像-->
+								<img src="images/user2-160x160.jpg" class="user-image" alt="User Image">
+								<!-- 隐藏的XS隐藏用户名在小型设备上只有图像出现. -->
+								<span class="hidden-xs">Horan</span>
+							</a>
+							<ul class="dropdown-menu">
+								<!-- 菜单中的用户图像 -->
+								<li class="user-header">
+									<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image">
+									<p>
+										Horan---网站开发者
+										<small>自03月2012年</small>
+									</p>
+								</li>
+								<!-- Menu Body -->
+								<li class="user-body">
+									<div class="col-xs-4 text-center">
+										<a href="#">粉丝</a>
+									</div>
+									<div class="col-xs-4 text-center">
+										<a href="#">销售</a>
+									</div>
+									<div class="col-xs-4 text-center">
+										<a href="#">朋友</a>
+									</div>
+								</li>
+								<!-- Menu Footer-->
+								<li class="user-footer">
+									<div class="pull-left">
+										<a href="#" class="btn btn-default btn-flat">简介</a>
+									</div>
+									<div class="pull-right">
+										<a href="#" class="btn btn-default btn-flat">退出</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<!-- 控制栏切换按钮 -->
+						<li>
+							<a href="#" data-toggle="control-sidebar">
+								<i class="fa fa-gears"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--左侧菜单包含标识和侧边栏 -->
+		<aside class="main-sidebar">
+
+			<section class="sidebar">
+				<!-- 侧边栏用户面板（可选） -->
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image"></div>
+					<div class="pull-left info">
+						<p>Frank Horan</p>
+						<!-- Status -->
+						<a href="#">
+							<i class="fa fa-circle text-success"></i>
+							在线
+						</a>
+					</div>
+				</div>
+
+				<!-- 搜索（可选） -->
+				<form action="#" method="get" class="sidebar-form">
+					<div class="input-group">
+						<input type="text" name="q" class="form-control" placeholder="Search...">
+						<span class="input-group-btn">
+							<button type="submit" name="search" id="search-btn" class="btn btn-flat">
+								<i class="fa fa-search"></i>
+							</button>
+						</span>
+					</div>
+				</form>
+				<!-- /.search form -->
+
+				<!-- Sidebar Menu -->
+				<ul class="sidebar-menu">
+					
+					<li class="">
+						<a href="index.html">
+							<i class="fa fa-dashboard"></i>
+							<span>控制台</span>
+						</a>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-files-o"></i>
+							<span>布局选项</span>
+							<small class="label pull-right bg-green">new</small>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="top-nav.html">
+									<i class="fa fa-circle-o"></i>
+									顶部导航
+								</a>
+							</li>
+							<!-- <li>
+								<a href="boxed.html">
+									<i class="fa fa-circle-o"></i>
+									盒装
+								</a>
+							</li>
+							<li>
+								<a href="fixed.html">
+									<i class="fa fa-circle-o"></i>
+									固定宽度
+								</a>
+							</li>
+							<li>
+								<a href="collapsed-sidebar.html">
+									<i class="fa fa-circle-o"></i>
+									折叠侧边栏
+								</a>
+							</li> -->
+						</ul>
+					</li>
+					<!-- <li>
+						<a href="typography.html">
+							<i class="fa fa-th"></i>
+							<span> 文字排版 </span>
+							<span class="label label-primary pull-right">1</span>
+						</a>
+					</li> -->
+					
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-laptop"></i>
+							<span>UI 元素</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="element1.html">
+									<i class="fa fa-circle-o"></i>
+									元素1
+								</a>
+							</li>
+							<li>
+								<a href="element2.html">
+									<i class="fa fa-circle-o"></i>
+									元素2
+								</a>
+							</li>
+
+							<li>
+								<a href="general.html">
+									<i class="fa fa-circle-o"></i>
+									通用
+								</a>
+							</li>
+							<li>
+								<a href="icons.html">
+									<i class="fa fa-circle-o"></i>
+									图标
+								</a>
+							</li>
+							<li>
+								<a href="buttons.html">
+									<i class="fa fa-circle-o"></i>
+									按钮
+								</a>
+							</li>
+							<li>
+								<a href="sliders.html">
+									<i class="fa fa-circle-o"></i>
+									滑块
+								</a>
+							</li>
+							<li>
+								<a href="timeline.html">
+									<i class="fa fa-circle-o"></i>
+									时间表
+								</a>
+							</li>
+							<li>
+								<a href="modals.html">
+									<i class="fa fa-circle-o"></i>
+									模态框
+								</a>
+							</li>
+							<li>
+								<a href="layers.html">
+									<i class="fa fa-circle-o"></i>
+									layer弹框
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-pie-chart"></i>
+							<span>图表</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="chartjs.html">
+									<i class="fa fa-circle-o"></i>
+									ChartJS
+								</a>
+							</li>
+							<li>
+								<a href="echarts.html">
+									<i class="fa fa-circle-o"></i>
+									Echarts
+								</a>
+							</li>
+							<li>
+								<a href="Highcharts.html">
+									<i class="fa fa-circle-o"></i>
+									Highcharts
+								</a>
+							</li>
+							<li>
+								<a href="inline.html">
+									<i class="fa fa-circle-o"></i>
+									Inline charts
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-edit"></i>
+							<span>表单</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="generalEle.html">
+									<i class="fa fa-circle-o"></i>
+									通用元素
+								</a>
+							</li>
+							<li>
+								<a href="advanced.html">
+									<i class="fa fa-circle-o"></i>
+									高级元素
+								</a>
+							</li>
+							<li>
+								<a href="editors.html">
+									<i class="fa fa-circle-o"></i>
+									编辑器
+								</a>
+							</li>
+							<li>
+								<a href="upload.html">
+									<i class="fa fa-circle-o"></i>
+									文件上传
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-table"></i>
+							<span>表格</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="simple.html">
+									<i class="fa fa-circle-o"></i>
+									简单表
+								</a>
+							</li>
+							<li>
+								<a href="data.html">
+									<i class="fa fa-circle-o"></i>
+									数据表
+								</a>
+							</li>
+						</ul>
+					</li>
+					<!-- <li>
+						<a href="calendar.html">
+							<i class="fa fa-calendar"></i>
+							<span>日历</span>
+							<small class="label pull-right bg-red">3</small>
+						</a>
+					</li> -->
+					<!-- <li>
+						<a href="mailbox.html">
+							<i class="fa fa-envelope"></i>
+							<span>邮箱</span>
+							<small class="label pull-right bg-yellow">12</small>
+						</a>
+					</li> -->
+					<li class="treeview ">
+						<a href="#">
+							<i class="fa fa-folder"></i>
+							<span>实例</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu ">
+							<!-- <li>
+								<a href="invoice.html">
+									<i class="fa fa-circle-o"></i>
+									Invoice
+								</a>
+							</li> -->
+							<!-- <li>
+								<a href="profile.html">
+									<i class="fa fa-circle-o"></i>
+									Profile
+								</a>
+							</li> -->
+							<li>
+								<a href="login.html">
+									<i class="fa fa-circle-o"></i>
+									登录
+								</a>
+							</li>
+							<li>
+								<a href="register.html">
+									<i class="fa fa-circle-o"></i>
+									注册
+								</a>
+							</li>
+							<!-- <li>
+								<a href="lockscreen.html">
+									<i class="fa fa-circle-o"></i>
+									Lockscreen
+								</a>
+							</li> -->
+							<li>
+								<a href="404.html">
+									<i class="fa fa-circle-o"></i>
+									404 Error
+								</a>
+							</li>
+							<li>
+								<a href="500.html">
+									<i class="fa fa-circle-o"></i>
+									500 Error
+								</a>
+							</li>
+							<li class="">
+								<a href="blank.html">
+									<i class="fa fa-circle-o"></i>
+									Blank Page
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-share"></i>
+							<span>多级菜单</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="#">
+									<i class="fa fa-circle-o"></i>
+									一级菜单
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-circle-o"></i>
+									一级菜单
+									<i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="#">
+											<i class="fa fa-circle-o"></i>
+											二级菜单
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-circle-o"></i>
+											二级菜单
+											<i class="fa fa-angle-left pull-right"></i>
+										</a>
+										<ul class="treeview-menu">
+											<li>
+												<a href="#">
+													<i class="fa fa-circle-o"></i>
+													三级菜单
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-circle-o"></i>
+													三级菜单
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-circle-o"></i>
+									一级菜单
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="header">标签</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-circle-o text-red"></i>
+							<span>重要</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-circle-o text-yellow"></i>
+							<span>警告</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-circle-o text-aqua"></i>
+							<span>通知</span>
+						</a>
+					</li>
+				</ul>
+				<!-- /.sidebar-menu -->
+			</section>
+			<!-- /.sidebar -->
+		</aside>
+
+		<!-- 页面内容 -->
+		<div class="content-wrapper">
+			<!-- 内容头（页头） -->
+			<section class="content-header">
+				<h1>
+					General Form Elements
+					<small>Preview</small>
+				</h1>
+				<ol class="breadcrumb">
+					<li>
+						<a href="#"> <i class="fa fa-dashboard"></i>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#">Form</a>
+					</li>
+					<li class="active">General Form Elements</li>
+				</ol>
+			</section>
+
+			<!-- 主要内容-->
+			<section class="content">
+				<!-- 你的页面内容在这里 -->			
+				<div class="row">
+					<!-- left column -->			
+					<div class="col-md-6">
+						<!-- general form elements -->			
+						<div class="box box-primary">
+							<div class="box-header with-border">
+								<h3 class="box-title">简单的例子</h3>
+							</div>
+							<!-- /.box-header -->			
+							<!-- form start -->			
+							<form role="form">
+								<div class="box-body">
+									<div class="form-group">
+										<label for="exampleInputEmail1">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"></div>
+									<div class="form-group">
+										<label for="exampleInputPassword1">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									</div>
+									
+									<div class="checkbox">
+										<label><input type="checkbox">Check me out</label>
+									</div>
+								</div>
+								<!-- /.box-body -->			
+
+								<div class="box-footer">
+									<button type="submit" class="btn btn-primary">提交</button>
+								</div>
+							</form>
+						</div>
+						<!-- /.box -->			
+
+						<!-- Form Element sizes -->			
+						<div class="box box-success">
+							<div class="box-header with-border">
+								<h3 class="box-title">不同高度</h3>
+							</div>
+							<div class="box-body">
+								<input class="form-control input-lg" type="text" placeholder=".input-lg">			
+								<br>			
+								<input class="form-control" type="text" placeholder="Default input">			
+								<br>			
+								<input class="form-control input-sm" type="text" placeholder=".input-sm"></div>
+							<!-- /.box-body -->			
+						</div>
+						<!-- /.box -->			
+
+						<div class="box box-danger">
+							<div class="box-header with-border">
+								<h3 class="box-title">不同宽度</h3>
+							</div>
+							<div class="box-body">
+								<div class="row">
+									<div class="col-xs-3">
+										<input type="text" class="form-control" placeholder=".col-xs-3"></div>
+									<div class="col-xs-4">
+										<input type="text" class="form-control" placeholder=".col-xs-4"></div>
+									<div class="col-xs-5">
+										<input type="text" class="form-control" placeholder=".col-xs-5"></div>
+								</div>
+							</div>
+							<!-- /.box-body -->			
+						</div>
+						<!-- /.box -->			
+
+						<!-- Input addon -->			
+						<div class="box box-info">
+							<div class="box-header with-border">
+								<h3 class="box-title">输入插件</h3>
+							</div>
+							<div class="box-body">
+								<div class="input-group">
+									<span class="input-group-addon">@</span>
+									<input type="text" class="form-control" placeholder="Username"></div>
+								<br>			
+								<div class="input-group">
+									<input type="text" class="form-control">			
+									<span class="input-group-addon">.00</span>
+								</div>
+								<br>			
+								<div class="input-group">
+									<span class="input-group-addon">$</span>
+									<input type="text" class="form-control">			
+									<span class="input-group-addon">.00</span>
+								</div>
+
+								<h4>图标</h4>
+								<div class="input-group">
+									<span class="input-group-addon"> <i class="fa fa-envelope"></i>
+									</span>
+									<input type="email" class="form-control" placeholder="Email"></div>
+								<br>			
+								<div class="input-group">
+									<input type="text" class="form-control">			
+									<span class="input-group-addon"> <i class="fa fa-check"></i>
+									</span>
+								</div>
+								<br>			
+								<div class="input-group">
+									<span class="input-group-addon">
+										<i class="fa fa-dollar"></i>
+									</span>
+									<input type="text" class="form-control">			
+									<span class="input-group-addon">
+										<i class="fa fa-ambulance"></i>
+									</span>
+								</div>
+
+									
+
+								<h4>按钮</h4>
+								<p class="margin">
+									Large:
+									<code>.input-group.input-group-lg</code>
+								</p>
+								<div class="input-group input-group-lg">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+											Action
+											<span class="fa fa-caret-down"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#">Action</a>
+											</li>
+											<li>
+												<a href="#">Another action</a>
+											</li>
+											<li>
+												<a href="#">Something else here</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#">Separated link</a>
+											</li>
+										</ul>
+									</div>
+									<!-- /btn-group -->			
+									<input type="text" class="form-control"></div>
+								<!-- /input-group -->			
+								<p class="margin">Normal</p>
+								<div class="input-group">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-danger">Action</button>
+									</div>
+									<!-- /btn-group -->			
+									<input type="text" class="form-control"></div>
+								<!-- /input-group -->			
+								<p class="margin">
+									Small
+									<code>.input-group.input-group-sm</code>
+								</p>
+								<div class="input-group input-group-sm">
+									<input type="text" class="form-control">			
+									<span class="input-group-btn">
+										<button class="btn btn-info btn-flat" type="button">Go!</button>
+									</span>
+								</div>
+								<!-- /input-group -->			
+							</div>
+							<!-- /.box-body -->			
+						</div>
+						<!-- /.box -->			
+					</div>
+					<!--/.col (left) -->			
+					<!-- right column -->			
+					<div class="col-md-6">
+						<!-- Horizontal Form -->			
+						<div class="box box-info">
+							<div class="box-header with-border">
+								<h3 class="box-title">水平形式</h3>
+							</div>
+							<!-- /.box-header -->			
+							<!-- form start -->			
+							<form class="form-horizontal">
+								<div class="box-body">
+									<div class="form-group">
+										<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="inputEmail3" placeholder="Email"></div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+										<div class="col-sm-10">
+											<input type="password" class="form-control" id="inputPassword3" placeholder="Password"></div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<div class="checkbox">
+												<label>
+													<input type="checkbox">记住我</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /.box-body -->			
+								<div class="box-footer">
+									<button type="submit" class="btn btn-default">取消</button>
+									<button type="submit" class="btn btn-info pull-right">登录</button>
+								</div>
+								<!-- /.box-footer -->			
+							</form>
+						</div>
+						<!-- /.box -->			
+						<!-- general form elements disabled -->			
+						<div class="box box-warning">
+							<div class="box-header with-border">
+								<h3 class="box-title">一般元素</h3>
+							</div>
+							<!-- /.box-header -->			
+							<div class="box-body">
+								<form role="form">
+									<!-- text input -->			
+									<div class="form-group">
+										<label>Text</label>
+										<input type="text" class="form-control" placeholder="Enter ..."></div>
+									<div class="form-group">
+										<label>Text Disabled</label>
+										<input type="text" class="form-control" placeholder="Enter ..." disabled></div>
+
+									<!-- textarea -->			
+									<div class="form-group">
+										<label>Textarea</label>
+										<textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+									</div>
+									<div class="form-group">
+										<label>Textarea Disabled</label>
+										<textarea class="form-control" rows="3" placeholder="Enter ..." disabled></textarea>
+									</div>
+
+									<!-- input states -->			
+									<div class="form-group has-success">
+										<label class="control-label" for="inputSuccess">
+											<i class="fa fa-check"></i>
+											Input with success
+										</label>
+										<input type="text" class="form-control" id="inputSuccess" placeholder="Enter ..."></div>
+									<div class="form-group has-warning">
+										<label class="control-label" for="inputWarning">
+											<i class="fa fa-bell-o"></i>
+											Input with warning
+										</label>
+										<input type="text" class="form-control" id="inputWarning" placeholder="Enter ..."></div>
+									<div class="form-group has-error">
+										<label class="control-label" for="inputError">
+											<i class="fa fa-times-circle-o"></i>
+											Input with error
+										</label>
+										<input type="text" class="form-control" id="inputError" placeholder="Enter ...">
+									</div>
+
+									<div class="form-group clearfix">
+										<label>上传文件</label>
+										<div class="lineInput">
+											<span class="spanInput">
+												<input name="" type="text" id="viewfile" onmouseout="document.getElementById('upload').style.display='none';" class="inputstyle" />			
+											</span>
+											<label for="unload" onmouseover="document.getElementById('upload').style.display='block';" class="file1input">浏览...</label>
+											<input type="file" onchange="document.getElementById('viewfile').value=this.value;this.style.display='none';" class="fileInput" id="upload" />				
+										</div>						
+									</div>
+
+									<div class="form-group clearfix">
+										<label>上传视频</label>								
+										
+        								<input id="file_upload" name="file_upload" type="file" multiple="true">
+
+        								<div id="queue"></div>
+									</div>
+
+								</form>
+							</div>
+							<!-- /.box-body -->			
+						</div>
+						<!-- /.box -->			
+					</div>
+					<!--/.col (right) -->			
+				</div>
+				<!-- /.row -->			
+
+			</section>
+			<!-- /.content -->
+		</div>
+		<!-- /.content-wrapper -->
+
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			
+			<!-- 默认为左 --> 
+			<strong>Copyright &copy; 2016
+				<a href="#">北京分豆科技股份有限公司</a> .
+			</strong> 
+			All rights reserved.
+		</footer>
+
+
+		<!-- 控制栏 -->
+		
+		<aside class="control-sidebar control-sidebar-dark">
+			<!-- Create the tabs -->		
+			<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+				<li>
+					<a href="#control-sidebar-home-tab" data-toggle="tab"> <i class="fa fa-home"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#control-sidebar-settings-tab" data-toggle="tab">
+						<i class="fa fa-gears"></i>
+					</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->		
+			<div class="tab-content">
+				<!-- Home tab content -->		
+				<div class="tab-pane" id="control-sidebar-home-tab">
+					<h3 class="control-sidebar-heading">最近的活动</h3>
+					<ul class="control-sidebar-menu">
+						<li>
+							<a href="javascript::;">
+								<i class="menu-icon fa fa-birthday-cake bg-red"></i>
+								<div class="menu-info">
+									<h4 class="control-sidebar-subheading">生日</h4>
+									<p>四月二十四</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript::;">
+								<i class="menu-icon fa fa-user bg-yellow"></i>
+								<div class="menu-info">
+									<h4 class="control-sidebar-subheading">电话</h4>
+									<p>555-1234</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript::;">
+								<i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+								<div class="menu-info">
+									<h4 class="control-sidebar-subheading">邮件</h4>
+									<p>nora163@163.com</p>
+								</div>
+							</a>
+						</li>
+						
+					</ul>
+					<!-- /.control-sidebar-menu -->		
+
+					<h3 class="control-sidebar-heading">任务进展</h3>
+					<ul class="control-sidebar-menu">
+						<li>
+							<a href="javascript::;">
+								<h4 class="control-sidebar-subheading">
+									自定义模板设计
+									<span class="label label-danger pull-right">70%</span>
+								</h4>
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript::;">
+								<h4 class="control-sidebar-subheading">
+									更新简历
+									<span class="label label-success pull-right">95%</span>
+								</h4>
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-success" style="width: 95%"></div>
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javascript::;">
+								<h4 class="control-sidebar-subheading">
+									后端框架
+									<span class="label label-primary pull-right">68%</span>
+								</h4>
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<!-- /.control-sidebar-menu -->		
+
+				</div>
+				
+				<!-- /.tab-pane -->		
+
+				<!-- Settings tab content -->		
+				<div class="tab-pane" id="control-sidebar-settings-tab">
+					<form method="post">
+						<h3 class="control-sidebar-heading">一般设置</h3>
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								面板使用报告
+								<input type="checkbox" class="pull-right" checked=""></label>
+							<p>关于此一般设置选项的一些信息</p>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								允许邮件重定向
+								<input type="checkbox" class="pull-right" checked=""></label>
+							<p>其他组的选项是可用的</p>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								揭露作者姓名
+								<input type="checkbox" class="pull-right" checked=""></label>
+							<p>允许用户在博客文章中显示自己的名字</p>
+						</div>
+						<!-- /.form-group -->		
+
+						<h3 class="control-sidebar-heading">聊天设置</h3>
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								给我看在线
+								<input type="checkbox" class="pull-right" checked=""></label>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								关闭通知
+								<input type="checkbox" class="pull-right"></label>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								删除聊天记录
+								<a href="javascript::;" class="text-red pull-right">
+									<i class="fa fa-trash-o"></i>
+								</a>
+							</label>
+						</div>
+						<!-- /.form-group -->		
+					</form>
+				</div>
+				<!-- /.tab-pane -->		
+			</div>
+		</aside>
+		<!-- /.control-sidebar -->
+		<!-- 添加栏的背景。这个div必须放控制栏后 -->
+		<div class="control-sidebar-bg"></div>
+	</div>
+	<!-- ./wrapper -->
+
+
+	<!-- 所需的JS脚本 -->
+
+	<!-- jQuery 1.11.3 -->
+	<script src="js/jquery/jquery-1.11.3.min.js"></script>
+	<!-- Bootstrap 3.3.5 -->
+	<script src="library/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+	
+	<script src="js/app.min.js"></script>
+
+	<!-- SlimScroll 漂亮的虚拟滚动条 -->
+    <!-- <script src="library/slimScroll/jquery.slimscroll.min.js"></script> -->
+    <!-- FastClick 消除点击延时-移动设备使用 -->
+    <script src="library/fastclick/fastclick.min.js"></script>
+
+	<script src="js/demo.js"></script>
+
+	<script src="js/docs.js"></script>
+
+	<!--  本页  脚本-->
+
+	<!-- uploadify -->
+	<script src="library/uploadify/jquery.uploadify.min.js"></script>
+	<script>
+		 $(function() {
+            $('#file_upload')
+                    .uploadify(
+                            {   
+                                'debug'             : false,
+                                'auto'              : true, //是否自动上传,   
+                                'buttonClass'       : 'btnUploadify', //按钮辅助class   
+                                'buttonText'        : '上传视频', //按钮文字   
+                                'height'            : 30, //按钮高度   
+                                'width'             : 100, //按钮宽度   
+                                //'checkExisting'     : 'check-exists.php',//是否检测图片存在,不检测:false   
+                                'fileObjName'       : 'files', //默认 Filedata, $_FILES控件名称   
+                                'fileSizeLimit'     : '102400KB', //文件大小限制 0为无限制 默认KB   
+                                'fileTypeDesc'      : 'All Files', //图片选择描述   
+                                'fileTypeExts'      : '*.mp4; *.avi; *.rmvb',//文件后缀限制 默认：'*.*'   
+                                'formData'          : {
+                                    'someKey' : 'someValue',
+                                    'someOtherKey' : 1
+                                },//传输数据JSON格式   
+                                // 'formData'       :{ 'albumid':$("#albumid").val() },                
+                                //'overrideEvents'  : ['onUploadProgress'],  // The progress will not be updated   
+                                //'progressData'    : 'speed',             //默认percentage 进度显示方式   
+                                'queueID'           : 'queue', //默认队列ID   
+                                'queueSizeLimit'    : 20, //一个队列上传文件数限制   
+                                'removeCompleted'   : true, //完成时是否清除队列 默认true   
+                                'removeTimeout'     : 3, //完成时清除队列显示秒数,默认3秒   
+                                'requeueErrors'     : false, //队列上传出错，是否继续回滚队列   
+                                'successTimeout'    : 5, //上传超时   
+                                'uploadLimit'       : 99, //允许上传的最多张数   
+                                'swf'               : 'library/uploadify/uploadify.swf', //swfUpload   
+                                //'uploader'          : 'uploadify.php', //服务器端脚本   
+ 
+                                //修改formData数据   
+                                'onUploadStart' : function(file) {
+                                    //$("#file_upload").uploadify("settings", "someOtherKey", 2);   
+                                },
+                                'onUploadStart' : function(file) {
+                                    //  $("#perpic").uploadify("settings","formData",{"albumid":$("#albumid").val()});    
+                                },
+                                //删除时触发   
+                                'onCancel' : function(file) {
+                                    //alert('The file ' + file.name + '--' + file.size + ' was cancelled.');   
+                                },
+                                //清除队列   
+                                'onClearQueue' : function(queueItemCount) {
+                                    //alert(queueItemCount + ' file(s) were removed from the queue');   
+                                },
+                                //调用destroy是触发   
+                                'onDestroy' : function() {
+                                    alert('我被销毁了');
+                                },
+                                //每次初始化一个队列是触发   
+                                'onInit' : function(instance) {
+                                    //alert('The queue ID is ' + instance.settings.queueID);   
+                                },
+                                //上传成功   
+                                'onUploadSuccess' : function(file, data,
+                                        response) {
+                                    //alert(file.name + ' | ' + response + ':' + data);   
+                                },
+                                //上传错误   
+                                'onUploadError' : function(file, errorCode,
+                                        errorMsg, errorString) {
+                                    //alert('The file ' + file.name + ' could not be uploaded: ' + errorString);   
+                                },
+                                //上传汇总   
+                                'onUploadProgress' : function(file,
+                                        bytesUploaded, bytesTotal,
+                                        totalBytesUploaded, totalBytesTotal) {
+                                    $('#progress').html(
+                                            totalBytesUploaded
+                                                    + ' bytes uploaded of '
+                                                    + totalBytesTotal
+                                                    + ' bytes.');
+                                },
+                                //上传完成   
+                                'onUploadComplete' : function(file) {
+                                    //alert('The file ' + file.name + ' finished processing.');   
+                                },
+ 
+                            });
+        });
+ 
+    </script>
+
+
+
+
+
+
+</body>
+</html>

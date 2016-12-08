@@ -1,0 +1,642 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>element1 |</title>
+	<!-- 告诉浏览器响应屏幕宽度 -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- Bootstrap 3.3.5 -->
+	<link href="library/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Ionicons -->
+	 <link href="library/ionicons/css/ionicons.min.css" rel="stylesheet">
+	
+	<!-- 主体样式 -->
+	<link rel="stylesheet" href="css/Admin.min.css">
+	<!--换肤样式-->
+	<link rel="stylesheet" href="css/skins/_all-skins.min.css">
+
+	<!-- HTML5的插件和respond.js IE8支持HTML5元素和媒体查询 -->
+	<!--[if lt IE 9]>
+	<script src="js/Bsiehtc/html5shiv.min.js"></script>
+	<script src="js/Bsiehtc/respond.min.js"></script>
+	<![endif]-->
+
+	<!--本页所需-->
+	<link rel="stylesheet" href="css/ifdoo/ifdoo-forms.css">
+	<link rel="stylesheet" href="css/ifdoo/ifdoo-core.css">
+
+
+</head>
+
+<body class="skin-blue layout-top-nav">
+	<div class="wrapper">
+
+		<!-- Main Header -->
+		<header class="main-header">
+			<nav class="navbar navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="index.html" class="navbar-brand"> <b>Admin</b>
+							Ifdoo
+						</a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"> <i class="fa fa-bars"></i>
+						</button>
+					</div>
+	
+					<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li class="active">
+								<a href="#">
+									导航
+									<!-- <span class="sr-only">(current)</span> -->
+								</a>
+							</li>
+							<li>
+								<a href="#">导航</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									下拉导航
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="#">Action</a>
+									</li>
+									<li>
+										<a href="#">Another action</a>
+									</li>
+									<li>
+										<a href="#">Something else here</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">Separated link</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">One more separated link</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" id="navbar-search-input" placeholder="Search"></div>
+						</form>
+					</div>
+					<!-- /.navbar-collapse -->		
+					<!-- 导航栏右键菜单 -->
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<!-- 消息菜单 -->				
+							<li class="dropdown messages-menu">
+								<!-- Menu toggle button -->				
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-envelope-o"></i>
+									<span class="label label-success">4</span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="header">你有4条信息</li>
+									<li>
+
+										<ul class="menu">
+											<li>
+												<!-- start message -->				
+												<a href="#">
+													<div class="pull-left">
+														<!-- User Image -->				
+														<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image"></div>
+													<!-- 消息的标题和时间戳 -->				
+													<h4>
+														官方团队
+														<small> <i class="fa fa-clock-o"></i>
+															5 mins
+														</small>
+													</h4>
+													<!-- The message -->				
+													<p>为什么不买一个新的炫酷的主题?</p>
+												</a>
+											</li>
+											<!-- end message -->				
+										</ul>
+										<!-- /.menu -->				
+									</li>
+									<li class="footer">
+										<a href="#">看到所有的信息</a>
+									</li>
+								</ul>
+							</li>
+							<!-- /.messages-menu -->				
+
+							<!-- 通知菜单 -->				
+							<li class="dropdown notifications-menu">
+								<!-- Menu toggle button -->				
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="fa fa-bell-o"></i>
+									<span class="label label-warning">10</span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="header">你有10个通知</li>
+									<li>
+
+										<ul class="menu">
+											<li>
+												<!-- start notification -->				
+												<a href="#">
+													<i class="fa fa-users text-aqua"></i>
+													今天有5个新成员加入
+												</a>
+											</li>
+											<!-- end notification -->				
+										</ul>
+									</li>
+									<li class="footer">
+										<a href="#">查看所有</a>
+									</li>
+								</ul>
+							</li>
+							<!-- 任务菜单 -->				
+							<li class="dropdown tasks-menu">
+								<!-- Menu Toggle Button -->				
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="fa fa-flag-o"></i>
+									<span class="label label-danger">9</span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="header">你有9个任务</li>
+									<li>
+
+										<ul class="menu">
+											<li>
+												<!-- Task item -->				
+												<a href="#">
+													<!-- 任务标题和进展文本 -->				
+													<h3>
+														设计一些按钮
+														<small class="pull-right">20%</small>
+													</h3>
+													<!-- 进度条 -->				
+													<div class="progress xs">
+														<!-- 改变CSS宽度属性模拟研究进展 -->				
+														<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+															<span class="sr-only">20% 完成</span>
+														</div>
+													</div>
+												</a>
+											</li>
+											<!-- end task item -->				
+										</ul>
+									</li>
+									<li class="footer">
+										<a href="#">查看所有任务</a>
+									</li>
+								</ul>
+							</li>
+							<!-- 用户帐户菜单 -->				
+							<li class="dropdown user user-menu">
+								<!-- Menu Toggle Button -->				
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<!-- 在导航栏的用户图像-->				
+									<img src="images/user2-160x160.jpg" class="user-image" alt="User Image">				
+									<!-- 隐藏的XS隐藏用户名在小型设备上只有图像出现. -->				
+									<span class="hidden-xs">Horan</span>
+								</a>
+								<ul class="dropdown-menu">
+									<!-- 菜单中的用户图像 -->				
+									<li class="user-header">
+										<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image">				
+										<p>
+											Horan---网站开发者
+											<small>自03月2012年</small>
+										</p>
+									</li>
+									<!-- Menu Body -->				
+									<li class="user-body">
+										<div class="col-xs-4 text-center">
+											<a href="#">粉丝</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">销售</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">朋友</a>
+										</div>
+									</li>
+									<!-- Menu Footer-->				
+									<li class="user-footer">
+										<div class="pull-left">
+											<a href="#" class="btn btn-default btn-flat">简介</a>
+										</div>
+										<div class="pull-right">
+											<a href="#" class="btn btn-default btn-flat">退出</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-custom-menu -->		
+				</div>
+				<!-- /.container-fluid -->		
+			</nav>
+		</header>
+		
+
+		<!-- 页面内容 -->
+		<div class="content-wrapper">
+			<div class="container">
+				<!-- Content Header (Page header) -->		
+				<section class="content-header">
+					<h1>
+						element
+						<small>例1</small>
+					</h1>
+					<ol class="breadcrumb">
+						<li>
+							<a href="index.html"> <i class="fa fa-dashboard"></i>
+								首页
+							</a>
+						</li>
+						<li>
+							<a href="#">UI</a>
+						</li>
+						<li class="active">element</li>
+					</ol>
+				</section>
+
+				<!-- Main content -->		
+				<section class="content">
+					
+					<div class="row">
+						<div class="col-sm-6">
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">iswitch复选框替换</h3>
+									
+								</div>
+								<div class="panel-body">
+
+									<form role="form" class="form-horizontal">
+
+										<div class="form-group">
+											<label class="col-sm-3 control-label">Colors</label>
+
+											<div class="col-sm-9">
+												<div class="form-block">
+													<input type="checkbox" checked class="iswitch">					
+													<input type="checkbox" checked class="iswitch iswitch-primary">					
+													<input type="checkbox" checked class="iswitch iswitch-secondary">					
+													<input type="checkbox" checked class="iswitch iswitch-red">					
+													<input type="checkbox" checked class="iswitch iswitch-blue">					
+													<input type="checkbox" checked class="iswitch iswitch-purple">					
+													<br />					
+													<input type="checkbox" class="iswitch iswitch-warning">					
+													<input type="checkbox" class="iswitch iswitch-danger">					
+													<input type="checkbox" class="iswitch iswitch-info">					
+													<input type="checkbox" class="iswitch iswitch-success">					
+													<input type="checkbox" class="iswitch iswitch-gray">					
+													<input type="checkbox" class="iswitch iswitch-orange">					
+													<br />					
+													<input type="checkbox" class="iswitch iswitch-pink">					
+													<input type="checkbox" class="iswitch iswitch-yellow">					
+													<input type="checkbox" class="iswitch iswitch-turquoise"></div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label class="col-sm-3 control-label">Sizes</label>
+
+											<div class="col-sm-9">
+												<div class="form-block">
+													<input type="checkbox" class="iswitch iswitch-secondary"></div>
+
+												<div class="form-block">
+													<input type="checkbox" checked class="iswitch-lg iswitch-info"></div>
+
+												<div class="form-block">
+													<input type="checkbox" class="iswitch-xlg iswitch-red"></div>
+											</div>
+										</div>
+
+									</form>
+
+								</div>
+							</div>
+
+						</div>
+						<div class="col-sm-6">
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">垂直放置的形式</h3>
+									
+								</div>
+								<div class="panel-body">
+
+									<form role="form">
+
+										<div class="form-group">
+											<label for="email-1">Email address:</label>
+											<input type="email" class="form-control" id="email-1" placeholder="Enter your email&hellip;"></div>
+
+										<div class="form-group">
+											<label for="password-1">Password:</label>
+											<input type="password" class="form-control" id="password-1" placeholder="Enter your password">
+										</div>
+
+										
+
+										<div class="form-group">
+											<button type="button" class="btn btn-gray btn-single">Sign in</button>
+											<button type="button" class="btn btn-info btn-single pull-right">Register now</button>
+										</div>
+
+									</form>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">内联形式</h3>
+									
+								</div>
+								<div class="panel-body">
+
+									<form role="form" class="form-inline">
+
+										<div class="form-group">
+											<input type="text" class="form-control" size="25" placeholder="Username" />					
+										</div>
+
+										<div class="form-group">
+											<input type="password" class="form-control" size="25" placeholder="Password" />					
+										</div>
+
+										<div class="form-group">
+											<button class="btn btn-secondary btn-single">Sign in</button>
+										</div>
+
+										<div class="form-group pull-right">
+											<button class="btn btn-white btn-single">Create new account</button>
+										</div>
+
+									</form>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">输入网格</h3>
+									
+								</div>
+								<div class="panel-body">
+
+									<div class="row col-margin">
+										<div class="col-xs-12">
+											<input type="text" class="form-control" placeholder="xs-12" />					
+										</div>
+
+										<div class="col-xs-6">
+											<input type="text" class="form-control" placeholder=".col-xs-6" />					
+										</div>
+
+										<div class="col-xs-6">
+											<input type="text" class="form-control" placeholder=".col-xs-6" />					
+										</div>
+
+										<div class="col-xs-3">
+											<input type="text" class="form-control" placeholder=".col-xs-3" />					
+										</div>
+
+										<div class="col-xs-3">
+											<input type="text" class="form-control" placeholder=".col-xs-3" />					
+										</div>
+
+										<div class="col-xs-3">
+											<input type="text" class="form-control" placeholder=".col-xs-3" />					
+										</div>
+
+										<div class="col-xs-3">
+											<input type="text" class="form-control" placeholder=".col-xs-3" />					
+										</div>
+
+										<div class="col-xs-2">
+											<input type="text" class="form-control" placeholder=".col-xs-2" />					
+										</div>
+
+										<div class="col-xs-2">
+											<input type="text" class="form-control" placeholder=".col-xs-2" />					
+										</div>
+
+										<div class="col-xs-2">
+											<input type="text" class="form-control" placeholder=".col-xs-2" />					
+										</div>
+
+										<div class="col-xs-2">
+											<input type="text" class="form-control" placeholder=".col-xs-2" />					
+										</div>
+
+										<div class="col-xs-2">
+											<input type="text" class="form-control" placeholder=".col-xs-2" />					
+										</div>
+
+										<div class="col-xs-2">
+											<input type="text" class="form-control" placeholder=".col-xs-2" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+
+										<div class="col-xs-1">
+											<input type="text" class="form-control" placeholder=".xs-1" />					
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="panel panel-default">
+								<div class="panel-heading">警告框类型</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="alert alert-success">
+												<button type="button" class="close" data-dismiss="alert">
+													<span aria-hidden="true">&times;</span>
+													<span class="sr-only">关闭</span>
+												</button> <strong>警告一!</strong>
+												警告内容。
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="alert alert-info">
+												<button type="button" class="close" data-dismiss="alert">
+													<span aria-hidden="true">&times;</span>
+													<span class="sr-only">关闭</span>
+												</button>
+												<strong>警告二!</strong>
+												警告内容。
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="alert alert-warning">
+												<strong>警告三!</strong>
+												警告内容。
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="alert alert-danger">
+												<strong>警告四!</strong>
+												警告内容。
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="alert alert-default">
+												<button type="button" class="close" data-dismiss="alert">
+													<span aria-hidden="true">&times;</span>
+													<span class="sr-only">关闭</span>
+												</button>
+
+												<strong>警告五</strong>
+												警告内容。
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="alert alert-white">
+												<button type="button" class="close" data-dismiss="alert">
+													<span aria-hidden="true">&times;</span>
+													<span class="sr-only">关闭</span>
+												</button>
+												<strong>警告六</strong>
+												警告内容。
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="alert alert-black">
+												<button type="button" class="close" data-dismiss="alert">
+													<span aria-hidden="true">&times;</span>
+													<span class="sr-only">关闭</span>
+												</button>
+												<strong>警告七</strong>
+												警告内容。
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					</section>
+				<!-- /.content -->		
+			</div>
+			<!-- /.container -->		
+		</div>
+		<!-- /.content-wrapper -->		
+
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			
+			<!-- 默认为左 --> 
+			<strong>Copyright &copy; 2016
+				<a href="#">北京分豆科技股份有限公司</a> .
+			</strong> 
+			All rights reserved.
+		</footer>
+
+	</div>
+	<!-- ./wrapper -->
+
+
+	<!-- 所需的JS脚本 -->
+
+	<!-- jQuery 1.11.3 -->
+	<script src="js/jquery/jquery-1.11.3.min.js"></script>
+	<!-- Bootstrap 3.3.5 -->
+	<script src="library/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+	
+	<!-- Your javascript -->
+	<script src="js/app.min.js"></script>
+	
+	<!--本页所需脚本-->
+	
+
+	
+
+</body>
+</html>

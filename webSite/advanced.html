@@ -1,0 +1,1239 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Advanced Form Elements |</title>
+	<!-- 告诉浏览器响应屏幕宽度 -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- Bootstrap 3.3.5 -->
+	<link href="library/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Ionicons -->
+	 <link href="library/ionicons/css/ionicons.min.css" rel="stylesheet">
+	
+	<!-- 主体样式 -->
+	<link rel="stylesheet" href="css/Admin.min.css">
+	<!--换肤样式-->
+	<link rel="stylesheet" href="css/skins/_all-skins.min.css">
+
+	<!-- HTML5的插件和respond.js IE8支持HTML5元素和媒体查询 -->
+	<!--[if lt IE 9]>
+	<script src="js/Bsiehtc/html5shiv.min.js"></script>
+	<script src="js/Bsiehtc/respond.min.js"></script>
+	<![endif]-->
+
+	<!--本页相关-->
+	<!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="library/iCheck/all.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="library/colorpicker/bootstrap-colorpicker.min.css">
+    <!-- Bootstrap time Picker -->
+    <link rel="stylesheet" href="library/timepicker/bootstrap-timepicker.min.css">
+	<!-- chosen_v1.5.1 -->
+    <link rel="stylesheet" href="library/chosen/chosen.min.css">
+
+	<link rel="stylesheet" href="css/mianAdmin.css">    
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+		<!-- Main Header -->
+		<header class="main-header">
+
+			<!-- Logo -->
+			<a href="index.html" class="logo">
+				<!-- 迷你标志的侧边栏小50x50像素 -->
+				<span class="logo-mini"><b>I</b>fdoo</span>
+				<!-- 正常状态和移动设备的标识 -->
+				<span class="logo-lg"> <b>Admin</b>
+					Ifdoo
+				</span>
+			</a>
+
+			<!-- 标题导航栏 -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<!-- 侧边栏切换按钮-->
+				<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+					<span class="sr-only">切换导航</span>
+				</a>
+				<!-- 导航栏右键菜单 -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<!-- 消息菜单 -->
+						<li class="dropdown messages-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-envelope-o"></i>
+								<span class="label label-success">4</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="header">你有4条信息</li>
+								<li>
+
+									<ul class="menu">
+										<li>
+											<!-- start message -->
+											<a href="#">
+												<div class="pull-left">
+													<!-- User Image -->
+													<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image"></div>
+												<!-- 消息的标题和时间戳 -->
+												<h4>
+													官方团队
+													<small> <i class="fa fa-clock-o"></i>
+														5 mins
+													</small>
+												</h4>
+												<!-- The message -->
+												<p>为什么不买一个新的炫酷的主题?</p>
+											</a>
+										</li>
+										<!-- end message -->
+									</ul>
+									<!-- /.menu -->
+								</li>
+								<li class="footer">
+									<a href="#">看到所有的信息</a>
+								</li>
+							</ul>
+						</li>
+						<!-- /.messages-menu -->
+
+						<!-- 通知菜单 -->
+						<li class="dropdown notifications-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-bell-o"></i>
+								<span class="label label-warning">10</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="header">你有10个通知</li>
+								<li>
+
+									<ul class="menu">
+										<li>
+											<!-- start notification -->
+											<a href="#">
+												<i class="fa fa-users text-aqua"></i>
+												今天有5个新成员加入
+											</a>
+										</li>
+										<!-- end notification -->
+									</ul>
+								</li>
+								<li class="footer">
+									<a href="#">查看所有</a>
+								</li>
+							</ul>
+						</li>
+						<!-- 任务菜单 -->
+						<li class="dropdown tasks-menu">
+							<!-- Menu Toggle Button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-flag-o"></i>
+								<span class="label label-danger">9</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="header">你有9个任务</li>
+								<li>
+
+									<ul class="menu">
+										<li>
+											<!-- Task item -->
+											<a href="#">
+												<!-- 任务标题和进展文本 -->
+												<h3>
+													设计一些按钮
+													<small class="pull-right">20%</small>
+												</h3>
+												<!-- 进度条 -->
+												<div class="progress xs">
+													<!-- 改变CSS宽度属性模拟研究进展 -->
+													<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+														<span class="sr-only">20% 完成</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<!-- end task item -->
+									</ul>
+								</li>
+								<li class="footer">
+									<a href="#">查看所有任务</a>
+								</li>
+							</ul>
+						</li>
+						<!-- 用户帐户菜单 -->
+						<li class="dropdown user user-menu">
+							<!-- Menu Toggle Button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<!-- 在导航栏的用户图像-->
+								<img src="images/user2-160x160.jpg" class="user-image" alt="User Image">
+								<!-- 隐藏的XS隐藏用户名在小型设备上只有图像出现. -->
+								<span class="hidden-xs">Horan</span>
+							</a>
+							<ul class="dropdown-menu">
+								<!-- 菜单中的用户图像 -->
+								<li class="user-header">
+									<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image">
+									<p>
+										Horan---网站开发者
+										<small>自03月2012年</small>
+									</p>
+								</li>
+								<!-- Menu Body -->
+								<li class="user-body">
+									<div class="col-xs-4 text-center">
+										<a href="#">粉丝</a>
+									</div>
+									<div class="col-xs-4 text-center">
+										<a href="#">销售</a>
+									</div>
+									<div class="col-xs-4 text-center">
+										<a href="#">朋友</a>
+									</div>
+								</li>
+								<!-- Menu Footer-->
+								<li class="user-footer">
+									<div class="pull-left">
+										<a href="#" class="btn btn-default btn-flat">简介</a>
+									</div>
+									<div class="pull-right">
+										<a href="#" class="btn btn-default btn-flat">退出</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<!-- 控制栏切换按钮 -->
+						<li>
+							<a href="#" data-toggle="control-sidebar">
+								<i class="fa fa-gears"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--左侧菜单包含标识和侧边栏 -->
+		<aside class="main-sidebar">
+
+			<section class="sidebar">
+				<!-- 侧边栏用户面板（可选） -->
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image"></div>
+					<div class="pull-left info">
+						<p>Frank Horan</p>
+						<!-- Status -->
+						<a href="#">
+							<i class="fa fa-circle text-success"></i>
+							在线
+						</a>
+					</div>
+				</div>
+
+				<!-- 搜索（可选） -->
+				<form action="#" method="get" class="sidebar-form">
+					<div class="input-group">
+						<input type="text" name="q" class="form-control" placeholder="Search...">
+						<span class="input-group-btn">
+							<button type="submit" name="search" id="search-btn" class="btn btn-flat">
+								<i class="fa fa-search"></i>
+							</button>
+						</span>
+					</div>
+				</form>
+				<!-- /.search form -->
+
+				<!-- Sidebar Menu -->
+				<ul class="sidebar-menu">
+					
+					<li class="">
+						<a href="index.html">
+							<i class="fa fa-dashboard"></i>
+							<span>控制台</span>
+						</a>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-files-o"></i>
+							<span>布局选项</span>
+							<small class="label pull-right bg-green">new</small>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="top-nav.html">
+									<i class="fa fa-circle-o"></i>
+									顶部导航
+								</a>
+							</li>
+							<!-- <li>
+								<a href="boxed.html">
+									<i class="fa fa-circle-o"></i>
+									盒装
+								</a>
+							</li>
+							<li>
+								<a href="fixed.html">
+									<i class="fa fa-circle-o"></i>
+									固定宽度
+								</a>
+							</li>
+							<li>
+								<a href="collapsed-sidebar.html">
+									<i class="fa fa-circle-o"></i>
+									折叠侧边栏
+								</a>
+							</li> -->
+						</ul>
+					</li>
+					<!-- <li>
+						<a href="typography.html">
+							<i class="fa fa-th"></i>
+							<span> 文字排版 </span>
+							<span class="label label-primary pull-right">1</span>
+						</a>
+					</li> -->
+					
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-laptop"></i>
+							<span>UI 元素</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="element1.html">
+									<i class="fa fa-circle-o"></i>
+									元素1
+								</a>
+							</li>
+							<li>
+								<a href="element2.html">
+									<i class="fa fa-circle-o"></i>
+									元素2
+								</a>
+							</li>
+
+							<li>
+								<a href="general.html">
+									<i class="fa fa-circle-o"></i>
+									通用
+								</a>
+							</li>
+							<li>
+								<a href="icons.html">
+									<i class="fa fa-circle-o"></i>
+									图标
+								</a>
+							</li>
+							<li>
+								<a href="buttons.html">
+									<i class="fa fa-circle-o"></i>
+									按钮
+								</a>
+							</li>
+							<li>
+								<a href="sliders.html">
+									<i class="fa fa-circle-o"></i>
+									滑块
+								</a>
+							</li>
+							<li>
+								<a href="timeline.html">
+									<i class="fa fa-circle-o"></i>
+									时间表
+								</a>
+							</li>
+							<li>
+								<a href="modals.html">
+									<i class="fa fa-circle-o"></i>
+									模态框
+								</a>
+							</li>
+							<li>
+								<a href="layers.html">
+									<i class="fa fa-circle-o"></i>
+									layer弹框
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-pie-chart"></i>
+							<span>图表</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="chartjs.html">
+									<i class="fa fa-circle-o"></i>
+									ChartJS
+								</a>
+							</li>
+							<li>
+								<a href="echarts.html">
+									<i class="fa fa-circle-o"></i>
+									Echarts
+								</a>
+							</li>
+							<li>
+								<a href="Highcharts.html">
+									<i class="fa fa-circle-o"></i>
+									Highcharts
+								</a>
+							</li>
+							<li>
+								<a href="inline.html">
+									<i class="fa fa-circle-o"></i>
+									Inline charts
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-edit"></i>
+							<span>表单</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="generalEle.html">
+									<i class="fa fa-circle-o"></i>
+									通用元素
+								</a>
+							</li>
+							<li>
+								<a href="advanced.html">
+									<i class="fa fa-circle-o"></i>
+									高级元素
+								</a>
+							</li>
+							<li>
+								<a href="editors.html">
+									<i class="fa fa-circle-o"></i>
+									编辑器
+								</a>
+							</li>
+							<li>
+								<a href="upload.html">
+									<i class="fa fa-circle-o"></i>
+									文件上传
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-table"></i>
+							<span>表格</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="simple.html">
+									<i class="fa fa-circle-o"></i>
+									简单表
+								</a>
+							</li>
+							<li>
+								<a href="data.html">
+									<i class="fa fa-circle-o"></i>
+									数据表
+								</a>
+							</li>
+						</ul>
+					</li>
+					<!-- <li>
+						<a href="calendar.html">
+							<i class="fa fa-calendar"></i>
+							<span>日历</span>
+							<small class="label pull-right bg-red">3</small>
+						</a>
+					</li> -->
+					<!-- <li>
+						<a href="mailbox.html">
+							<i class="fa fa-envelope"></i>
+							<span>邮箱</span>
+							<small class="label pull-right bg-yellow">12</small>
+						</a>
+					</li> -->
+					<li class="treeview ">
+						<a href="#">
+							<i class="fa fa-folder"></i>
+							<span>实例</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu ">
+							<!-- <li>
+								<a href="invoice.html">
+									<i class="fa fa-circle-o"></i>
+									Invoice
+								</a>
+							</li> -->
+							<!-- <li>
+								<a href="profile.html">
+									<i class="fa fa-circle-o"></i>
+									Profile
+								</a>
+							</li> -->
+							<li>
+								<a href="login.html">
+									<i class="fa fa-circle-o"></i>
+									登录
+								</a>
+							</li>
+							<li>
+								<a href="register.html">
+									<i class="fa fa-circle-o"></i>
+									注册
+								</a>
+							</li>
+							<!-- <li>
+								<a href="lockscreen.html">
+									<i class="fa fa-circle-o"></i>
+									Lockscreen
+								</a>
+							</li> -->
+							<li>
+								<a href="404.html">
+									<i class="fa fa-circle-o"></i>
+									404 Error
+								</a>
+							</li>
+							<li>
+								<a href="500.html">
+									<i class="fa fa-circle-o"></i>
+									500 Error
+								</a>
+							</li>
+							<li class="">
+								<a href="blank.html">
+									<i class="fa fa-circle-o"></i>
+									Blank Page
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-share"></i>
+							<span>多级菜单</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="#">
+									<i class="fa fa-circle-o"></i>
+									一级菜单
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-circle-o"></i>
+									一级菜单
+									<i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="#">
+											<i class="fa fa-circle-o"></i>
+											二级菜单
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-circle-o"></i>
+											二级菜单
+											<i class="fa fa-angle-left pull-right"></i>
+										</a>
+										<ul class="treeview-menu">
+											<li>
+												<a href="#">
+													<i class="fa fa-circle-o"></i>
+													三级菜单
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-circle-o"></i>
+													三级菜单
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-circle-o"></i>
+									一级菜单
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="header">标签</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-circle-o text-red"></i>
+							<span>重要</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-circle-o text-yellow"></i>
+							<span>警告</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-circle-o text-aqua"></i>
+							<span>通知</span>
+						</a>
+					</li>
+				</ul>
+				<!-- /.sidebar-menu -->
+			</section>
+			<!-- /.sidebar -->
+		</aside>
+
+		<!-- 页面内容 -->
+		<div class="content-wrapper">
+			<!-- 内容头（页头） -->
+			<section class="content-header">
+				<h1>
+					Advanced Form Elements
+					<small>Preview</small>
+				</h1>
+				<ol class="breadcrumb">
+					<li>
+						<a href="#"> <i class="fa fa-dashboard"></i>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#">Form</a>
+					</li>
+					<li class="active">Advanced Form Elements</li>
+				</ol>
+			</section>
+
+			<!-- 主要内容-->
+			<section class="content">
+				<!-- 你的页面内容在这里 -->			
+		
+				<div class="box box-default">
+					<div class="box-header with-border">
+						<h3 class="box-title">Chosen</h3>
+						<div class="box-tools pull-right">
+							<button class="btn btn-box-tool" data-widget="collapse"> <i class="fa fa-minus"></i>
+							</button>
+							<button class="btn btn-box-tool" data-widget="remove"> <i class="fa fa-remove"></i>
+							</button>
+						</div>
+					</div>
+					<!-- /.box-header -->			
+					<div class="box-body">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Minimal</label>
+									<select class="form-control chosen_select" style="width: 100%;">
+										<option selected="selected">Alabama</option>
+										<option>Alaska</option>
+										<option>California</option>
+										<option>Delaware</option>
+										<option>Tennessee</option>
+										<option>Texas</option>
+										<option>Washington</option>
+									</select>
+								</div>
+								<!-- /.form-group -->			
+								<div class="form-group">
+									<label>Disabled</label>
+									<select class="form-control chosen_select" disabled="disabled" style="width: 100%;">
+										<option selected="selected">Alabama</option>
+										<option>Alaska</option>
+										<option>California</option>
+										<option>Delaware</option>
+										<option>Tennessee</option>
+										<option>Texas</option>
+										<option>Washington</option>
+									</select>
+								</div>
+								<!-- /.form-group -->			
+							</div>
+							<!-- /.col -->			
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Multiple</label>
+									<select class="form-control chosen_select" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
+										<option>Alabama</option>
+										<option>Alaska</option>
+										<option>California</option>
+										<option>Delaware</option>
+										<option>Tennessee</option>
+										<option>Texas</option>
+										<option>Washington</option>
+									</select>
+								</div>
+								<!-- /.form-group -->			
+								<div class="form-group">
+									<label>Disabled Result</label>
+									<select class="form-control chosen_select" style="width: 100%;">
+										<option selected="selected">Alabama</option>
+										<option>Alaska</option>
+										<option disabled="disabled">California (disabled)</option>
+										<option>Delaware</option>
+										<option>Tennessee</option>
+										<option>Texas</option>
+										<option>Washington</option>
+									</select>
+								</div>
+								<!-- /.form-group -->			
+							</div>
+							<!-- /.col -->			
+						</div>
+						<!-- /.row -->			
+					</div>
+					<!-- /.box-body -->			
+					
+				</div>
+				<!-- /.box -->			
+
+				<div class="row">
+					<div class="col-md-6">
+
+						<div class="box box-danger">
+							<div class="box-header">
+								<h3 class="box-title">Input masks</h3>
+							</div>
+							<div class="box-body">
+								<!-- Date dd/mm/yyyy -->			
+								<div class="form-group">
+									<label>Date masks:</label>
+									<div class="input-group">
+										<div class="input-group-addon">
+											<i class="fa fa-calendar"></i>
+										</div>
+										<input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask></div>
+									<!-- /.input group -->			
+								</div>
+								<!-- /.form group -->			
+
+								<!-- Date mm/dd/yyyy -->			
+								<div class="form-group">
+									<div class="input-group">
+										<div class="input-group-addon">
+											<i class="fa fa-calendar"></i>
+										</div>
+										<input type="text" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask></div>
+									<!-- /.input group -->			
+								</div>
+								<!-- /.form group -->			
+
+								<!-- phone mask -->			
+								<div class="form-group">
+									<label>US phone mask:</label>
+									<div class="input-group">
+										<div class="input-group-addon">
+											<i class="fa fa-phone"></i>
+										</div>
+										<input type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask></div>
+									<!-- /.input group -->			
+								</div>
+								<!-- /.form group -->			
+
+								<!-- phone mask -->			
+								<div class="form-group">
+									<label>Intl US phone mask:</label>
+									<div class="input-group">
+										<div class="input-group-addon">
+											<i class="fa fa-phone"></i>
+										</div>
+										<input type="text" class="form-control" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask></div>
+									<!-- /.input group -->			
+								</div>
+								<!-- /.form group -->			
+
+								<!-- IP mask -->			
+								<div class="form-group">
+									<label>IP mask:</label>
+									<div class="input-group">
+										<div class="input-group-addon">
+											<i class="fa fa-laptop"></i>
+										</div>
+										<input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask></div>
+									<!-- /.input group -->			
+								</div>
+								<!-- /.form group -->			
+
+							</div>
+							<!-- /.box-body -->			
+						</div>
+						<!-- /.box -->			
+
+						<div class="box box-info">
+							<div class="box-header">
+								<h3 class="box-title">Color & Time Picker</h3>
+							</div>
+							<div class="box-body">
+								<!-- Color Picker -->			
+								<div class="form-group">
+									<label>Color picker:</label>
+									<input type="text" class="form-control my-colorpicker1"></div>
+								<!-- /.form group -->			
+
+								<!-- Color Picker -->			
+								<div class="form-group">
+									<label>Color picker with addon:</label>
+									<div class="input-group my-colorpicker2">
+										<input type="text" class="form-control">			
+										<div class="input-group-addon">
+											<i></i>
+										</div>
+									</div>
+									<!-- /.input group -->			
+								</div>
+								<!-- /.form group -->			
+
+								<!-- time Picker -->			
+								<div class="bootstrap-timepicker">
+									<div class="form-group">
+										<label>Time picker:</label>
+										<div class="input-group">
+											<input type="text" class="form-control timepicker">			
+											<div class="input-group-addon">
+												<i class="fa fa-clock-o"></i>
+											</div>
+										</div>
+										<!-- /.input group -->			
+									</div>
+									<!-- /.form group -->			
+								</div>
+							</div>
+							<!-- /.box-body -->			
+						</div>
+						<!-- /.box -->			
+
+					</div>
+					<!-- /.col (left) -->			
+					<div class="col-md-6">
+						<div class="box box-primary">
+							<div class="box-header">
+								<h3 class="box-title">My97DatePicker</h3>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label>基本用法:</label>
+									<div class="input-group">
+										<input id="" class="Wdate WdateInput" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',readOnly:true})" />
+									<!-- /.input group -->			
+									</div>
+								<!-- /.form group -->
+								</div>				
+								<div class="form-group">
+									<label>只能选择今天以前的日期:</label>
+									<div class="input-group">
+										<input id="" class="Wdate WdateInput" onfocus="WdatePicker({readOnly:true,maxDate:'%y-%M-%d'})" />
+									</div>
+									<!-- /.input group -->			
+								</div>
+								<!-- /.form group -->				
+								<div class="form-group">
+									<label>使用运算表达式 只能选择 20小时前 至 30小时后 的日期 :</label>
+									<div class="input-group">
+										<input id="" class="Wdate WdateInput" onClick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',minDate:'%y-%M-%d {%H-20}:%m:%s',maxDate:'%y-%M-%d {%H+30}:%m:%s'})" />
+									</div>
+									<!-- /.input group -->			
+								</div>
+								<!-- /.form group -->	
+								<div class="form-group">
+									<label>开始，结束日期 :</label>
+									<!-- $dp.$ 相当于 document.getElementById 函数. -->								
+									<div class="input-group">
+										<input id="sdate" class="Wdate WdateInput" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',readOnly:true,maxDate:'#F{$dp.$D(\'edate\')}'})" />								
+										至
+										<input id="edate" class="Wdate WdateInput" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',readOnly:true,minDate:'#F{$dp.$D(\'sdate\')}',startDate:'#F{$dp.$D(\'sdate\',{d:+1})}'})" />								
+									</div>
+									<!-- /.input group -->								
+								</div>
+								<!-- /.form group -->		
+
+							</div>
+							<!-- /.box-body -->			
+						</div>
+						<!-- /.box -->			
+
+						<!-- iCheck -->			
+						<div class="box box-success">
+							<div class="box-header">
+								<h3 class="box-title">iCheck - Checkbox &amp; Radio Inputs</h3>
+							</div>
+							<div class="box-body">
+								<!-- Minimal style -->			
+
+								<!-- checkbox -->			
+								<div class="form-group">
+									<label>
+										<input type="checkbox" class="minimal" checked></label>
+									<label>
+										<input type="checkbox" class="minimal"></label>
+									<label>
+										<input type="checkbox" class="minimal" disabled>Minimal skin checkbox</label>
+								</div>
+
+								<!-- radio -->			
+								<div class="form-group">
+									<label>
+										<input type="radio" name="r1" class="minimal" checked></label>
+									<label>
+										<input type="radio" name="r1" class="minimal"></label>
+									<label>
+										<input type="radio" name="r1" class="minimal" disabled>Minimal skin radio</label>
+								</div>
+
+								<!-- Minimal red style -->			
+
+								<!-- checkbox -->			
+								<div class="form-group">
+									<label>
+										<input type="checkbox" class="minimal-red" checked></label>
+									<label>
+										<input type="checkbox" class="minimal-red"></label>
+									<label>
+										<input type="checkbox" class="minimal-red" disabled>Minimal red skin checkbox</label>
+								</div>
+
+								<!-- radio -->			
+								<div class="form-group">
+									<label>
+										<input type="radio" name="r2" class="minimal-red" checked></label>
+									<label>
+										<input type="radio" name="r2" class="minimal-red"></label>
+									<label>
+										<input type="radio" name="r2" class="minimal-red" disabled>Minimal red skin radio</label>
+								</div>
+
+								<!-- flat-green style -->			
+
+								<!-- checkbox -->			
+								<div class="form-group">
+									<label>
+										<input type="checkbox" class="flat-green" checked></label>
+									<label>
+										<input type="checkbox" class="flat-green"></label>
+									<label>
+										<input type="checkbox" class="flat-green" disabled>Flat green skin checkbox</label>
+								</div>
+
+								<!-- radio -->			
+								<div class="form-group">
+									<label><input type="radio" name="r3" class="flat-green" checked></label>
+									<label><input type="radio" name="r3" class="flat-green"></label>
+									<label><input type="radio" name="r3" class="flat-green" disabled>Flat green skin radio</label>
+								</div>
+
+
+								<!-- flat-blue style -->
+
+								<!--******radio*****-->
+								<div class="form-group">
+              						<label><input type="radio" name="radio1" class="square-blue" checked><span>radio-1</span></label>
+              						<label><input type="radio" name="radio1" class="square-blue"><span>radio-2</span></label>
+              						<label><input type="radio" name="radio1" class="square-blue" disabled><span>radio-3</span></label>
+								</div>
+								<!--******checkbox*****-->
+								<div class="form-group">
+              						<label><input type="checkbox"  class="square-blue" id="input-1" checked><span>checkbox-1</span></label>
+              						<label><input type="checkbox"  class="square-blue"><span>checkbox-2</span></label>
+              						<label><input type="checkbox"  class="square-blue" disabled><span>checkbox-3</span></label>
+								</div>
+
+
+
+							</div>
+							<!-- /.box-body -->			
+							<div class="box-footer">
+								更多的皮肤.
+								<a href="http://fronteed.com/iCheck/">文档</a>
+							</div>
+						</div>
+						<!-- /.box -->			
+					</div>
+					<!-- /.col (right) -->			
+				</div>
+				<!-- /.row -->			
+
+			</section>
+			<!-- /.content -->
+		</div>
+		<!-- /.content-wrapper -->
+
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			
+			<!-- 默认为左 --> 
+			<strong>Copyright &copy; 2016
+				<a href="#">北京分豆科技股份有限公司</a> .
+			</strong> 
+			All rights reserved.
+		</footer>
+
+
+		<!-- 控制栏 -->
+		
+		<aside class="control-sidebar control-sidebar-dark">
+			<!-- Create the tabs -->		
+			<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+				<li>
+					<a href="#control-sidebar-home-tab" data-toggle="tab"> <i class="fa fa-home"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#control-sidebar-settings-tab" data-toggle="tab">
+						<i class="fa fa-gears"></i>
+					</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->		
+			<div class="tab-content">
+				<!-- Home tab content -->		
+				<div class="tab-pane" id="control-sidebar-home-tab">
+					<h3 class="control-sidebar-heading">最近的活动</h3>
+					<ul class="control-sidebar-menu">
+						<li>
+							<a href="javascript::;">
+								<i class="menu-icon fa fa-birthday-cake bg-red"></i>
+								<div class="menu-info">
+									<h4 class="control-sidebar-subheading">生日</h4>
+									<p>四月二十四</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript::;">
+								<i class="menu-icon fa fa-user bg-yellow"></i>
+								<div class="menu-info">
+									<h4 class="control-sidebar-subheading">电话</h4>
+									<p>555-1234</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript::;">
+								<i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+								<div class="menu-info">
+									<h4 class="control-sidebar-subheading">邮件</h4>
+									<p>nora163@163.com</p>
+								</div>
+							</a>
+						</li>
+						
+					</ul>
+					<!-- /.control-sidebar-menu -->		
+
+					<h3 class="control-sidebar-heading">任务进展</h3>
+					<ul class="control-sidebar-menu">
+						<li>
+							<a href="javascript::;">
+								<h4 class="control-sidebar-subheading">
+									自定义模板设计
+									<span class="label label-danger pull-right">70%</span>
+								</h4>
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript::;">
+								<h4 class="control-sidebar-subheading">
+									更新简历
+									<span class="label label-success pull-right">95%</span>
+								</h4>
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-success" style="width: 95%"></div>
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javascript::;">
+								<h4 class="control-sidebar-subheading">
+									后端框架
+									<span class="label label-primary pull-right">68%</span>
+								</h4>
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<!-- /.control-sidebar-menu -->		
+
+				</div>
+				
+				<!-- /.tab-pane -->		
+
+				<!-- Settings tab content -->		
+				<div class="tab-pane" id="control-sidebar-settings-tab">
+					<form method="post">
+						<h3 class="control-sidebar-heading">一般设置</h3>
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								面板使用报告
+								<input type="checkbox" class="pull-right" checked=""></label>
+							<p>关于此一般设置选项的一些信息</p>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								允许邮件重定向
+								<input type="checkbox" class="pull-right" checked=""></label>
+							<p>其他组的选项是可用的</p>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								揭露作者姓名
+								<input type="checkbox" class="pull-right" checked=""></label>
+							<p>允许用户在博客文章中显示自己的名字</p>
+						</div>
+						<!-- /.form-group -->		
+
+						<h3 class="control-sidebar-heading">聊天设置</h3>
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								给我看在线
+								<input type="checkbox" class="pull-right" checked=""></label>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								关闭通知
+								<input type="checkbox" class="pull-right"></label>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								删除聊天记录
+								<a href="javascript::;" class="text-red pull-right">
+									<i class="fa fa-trash-o"></i>
+								</a>
+							</label>
+						</div>
+						<!-- /.form-group -->		
+					</form>
+				</div>
+				<!-- /.tab-pane -->		
+			</div>
+		</aside>
+		<!-- /.control-sidebar -->
+		<!-- 添加栏的背景。这个div必须放控制栏后 -->
+		<div class="control-sidebar-bg"></div>
+	</div>
+	<!-- ./wrapper -->
+
+
+	<!-- 所需的JS脚本 -->
+
+	<!-- jQuery 1.11.3 -->
+	<script src="js/jquery/jquery-1.11.3.min.js"></script>
+	<!-- Bootstrap 3.3.5 -->
+	<script src="library/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+	
+	<script src="js/app.min.js"></script>
+
+	<!-- SlimScroll 漂亮的虚拟滚动条 -->
+    <!-- <script src="library/slimScroll/jquery.slimscroll.min.js"></script> -->
+    <!-- FastClick 消除点击延时-移动设备使用 -->
+    <script src="library/fastclick/fastclick.min.js"></script>
+
+	<script src="js/demo.js"></script>
+
+	<script src="js/docs.js"></script>
+
+
+
+	<!--本页相关-->
+	<!-- My97DatePicker -->
+	<script src="library/My97DatePicker/WdatePicker.js"></script> 
+	<!-- chosen_v1.5.1 -->
+    <script src="library/chosen/chosen.jquery.min.js"></script>
+	<!-- iCheck 1.0.1 -->
+    <script src="library/iCheck/icheck.min.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="library/colorpicker/bootstrap-colorpicker.min.js"></script>
+     <!-- bootstrap time picker -->
+    <script src="library/timepicker/bootstrap-timepicker.min.js"></script>
+	<!-- InputMask -->
+    <script src="library/input-mask/jquery.inputmask.js"></script>
+    <script src="library/input-mask/jquery.inputmask.date.extensions.js"></script>
+    <script src="library/input-mask/jquery.inputmask.extensions.js"></script>
+	<script>
+		// js中调用Chosen定义的方法
+		$(".chosen_select").chosen({
+		    /*max_selected_options:2,*/  //当select为多选时，最多选择个数
+		    no_results_text:"没有找到",  //无搜索结果显示的文本
+		    allow_single_deselect:true   //是否允许取消选择
+		});
+
+		//blue color scheme for iCheck
+        $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+          checkboxClass: 'icheckbox_minimal-blue',
+          radioClass: 'iradio_minimal-blue'
+        });
+        //minimal-red color scheme for iCheck
+        $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+          checkboxClass: 'icheckbox_minimal-red',
+          radioClass: 'iradio_minimal-red'
+        });
+        //flat-green color scheme for iCheck
+        $('input[type="checkbox"].flat-green, input[type="radio"].flat-green').iCheck({
+          checkboxClass: 'icheckbox_flat-green',
+          radioClass: 'iradio_flat-green'
+        });
+
+        //square-blue color scheme for iCheck
+        $('input[type="checkbox"].square-blue, input[type="radio"].square-blue').iCheck({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
+        });
+
+
+
+        //Colorpicker
+        $(".my-colorpicker1").colorpicker();
+        //color picker with addon
+        $(".my-colorpicker2").colorpicker();
+
+        //Timepicker
+        $(".timepicker").timepicker({
+          showInputs: false
+        });
+
+         //Datemask dd/mm/yyyy
+        $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+        //Datemask2 mm/dd/yyyy
+        $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
+        //Money Euro
+        $("[data-mask]").inputmask();
+
+	</script>
+
+
+
+</body>
+</html>

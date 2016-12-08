@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* 取消input输入框的黄色背景 */
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+	-webkit-text-fill-color:#ccc !important;
+}
+input:focus:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+	-webkit-text-fill-color:#ccc !important;
+}
+/*chosen下拉框设置*/
+.chosen-container>.chosen-single, [class*="chosen-container"]>.chosen-single {
+    line-height: 28px;
+    height: 30px;
+    box-shadow: none;
+    background: #fafafa;
+}
+.chosen-container-single .chosen-single {
+    border-radius: 0;
+}
+/*general 页面-调色板 设置*/
+.color-palette {
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+.color-palette-set {
+	margin-bottom: 15px;
+}
+.color-palette span {
+	display: none;
+	font-size: 12px;
+}
+.color-palette:hover span {
+	display: block;
+}
+.color-palette-box h4 {
+	position: absolute;
+	top: 100%;
+	left: 25px;
+	margin-top: -40px;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 12px;
+	display: block;
+	z-index: 7;
+}
+/* 上传文件input-file设置 */
+.lineInput {
+	position: relative;
+	width: 300px;
+	text-align: left
+}
+.lineInput span.spanInput {
+	float: left;
+	padding-top: 2px;
+}
+.fileInput {
+	position: absolute;
+	left: 0;
+	width: 250px;
+	top: 0;
+	height: 28px;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	cursor: pointer
+}
+.file1input {
+	margin-left: 8px;
+	z-index: 1;
+	height: 28px;
+	line-height: 28px;
+	cursor: pointer;
+	background: #337ab7;
+	display:inline-block;
+	float:left;
+	border: 1px solid #367fa9;
+	border-radius: 4px;
+	padding: 0 12px;
+	overflow: hidden;
+	color: #fff;
+	text-decoration: none;
+	text-indent: 0;
+}
+.inputstyle {
+	border: 1px solid #367fa9;
+	width: 170px;
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	background: #FFF;
+	z-index: 99
+}
+
+/**上传视频-Uploadify插件**/
+.btnUploadify{
+	background: #337ab7 !important;
+	border-color: #367fa9;
+	color: #fff;
+	border-radius:5px;
+}
+
+/*双层弹框样式*/
+.modal {
+	overflow-y: auto;
+}
+/*bootbox alert*/
+.customModal .modal-dialog{width: 20%;}
+
+/*日期插件设置*/
+.WdateInput{ height:28px !important; line-height: 28px; border:1px solid #d2d6de !important;}
+
+/**jqueryPage样式**/
+.pager{height:30px;line-height:30px;font-size: 12px;margin: 25px 0px;text-align: center;color: #2E6AB1;overflow: hidden;}
+.pager a{border:1px solid #9AAFE5;color:#2E6AB1;margin:0px 5px;padding:5px 8px;text-decoration: none;}
+.pager a.hover,.pager a.active{background-color:#337ab7;border-color:#337ab7;color:#FFF;}
+.pager a.disabled{color:#C8CDD2;cursor:auto;}
+

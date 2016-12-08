@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>layers |</title>
+	<!-- 告诉浏览器响应屏幕宽度 -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- Bootstrap 3.3.5 -->
+	<link href="library/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Ionicons -->
+	 <link href="library/ionicons/css/ionicons.min.css" rel="stylesheet">
+	
+	<!-- 主体样式 -->
+	<link rel="stylesheet" href="css/Admin.min.css">
+	<!--换肤样式-->
+	<link rel="stylesheet" href="css/skins/_all-skins.min.css">
+
+	<!-- HTML5的插件和respond.js IE8支持HTML5元素和媒体查询 -->
+	<!--[if lt IE 9]>
+	<script src="js/Bsiehtc/html5shiv.min.js"></script>
+	<script src="js/Bsiehtc/respond.min.js"></script>
+	<![endif]-->
+
+	<!--本页样式-->
+	<!-- layer -->
+	<link href="library/layer/skin/layer.css" rel="stylesheet">
+
+
+</head>
+
+<body class="skin-blue layout-top-nav">
+	<div class="wrapper">
+
+		<!-- Main Header -->
+		<header class="main-header">
+			<nav class="navbar navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="index.html" class="navbar-brand"> <b>Admin</b>
+							Ifdoo
+						</a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"> <i class="fa fa-bars"></i>
+						</button>
+					</div>
+	
+					<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li class="active">
+								<a href="#">
+									layer弹框
+									<!-- <span class="sr-only">(current)</span> -->
+								</a>
+							</li>
+							<li>
+								<a href="#">导航</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									下拉导航
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="#">导航</a>
+									</li>
+									<li>
+										<a href="#">导航action</a>
+									</li>
+									<li>
+										<a href="#">导航here</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">导航link</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">One导航</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" id="navbar-search-input" placeholder="Search"></div>
+						</form>
+					</div>
+					<!-- /.navbar-collapse -->		
+					<!-- 导航栏右键菜单 -->
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<!-- 消息菜单 -->				
+							<li class="dropdown messages-menu">
+								<!-- Menu toggle button -->				
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-envelope-o"></i>
+									<span class="label label-success">4</span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="header">你有4条信息</li>
+									<li>
+
+										<ul class="menu">
+											<li>
+												<!-- start message -->				
+												<a href="#">
+													<div class="pull-left">
+														<!-- User Image -->				
+														<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image"></div>
+													<!-- 消息的标题和时间戳 -->				
+													<h4>
+														官方团队
+														<small> <i class="fa fa-clock-o"></i>
+															5 mins
+														</small>
+													</h4>
+													<!-- The message -->				
+													<p>为什么不买一个新的炫酷的主题?</p>
+												</a>
+											</li>
+											<!-- end message -->				
+										</ul>
+										<!-- /.menu -->				
+									</li>
+									<li class="footer">
+										<a href="#">看到所有的信息</a>
+									</li>
+								</ul>
+							</li>
+							<!-- /.messages-menu -->				
+
+							<!-- 通知菜单 -->				
+							<li class="dropdown notifications-menu">
+								<!-- Menu toggle button -->				
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="fa fa-bell-o"></i>
+									<span class="label label-warning">10</span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="header">你有10个通知</li>
+									<li>
+
+										<ul class="menu">
+											<li>
+												<!-- start notification -->				
+												<a href="#">
+													<i class="fa fa-users text-aqua"></i>
+													今天有5个新成员加入
+												</a>
+											</li>
+											<!-- end notification -->				
+										</ul>
+									</li>
+									<li class="footer">
+										<a href="#">查看所有</a>
+									</li>
+								</ul>
+							</li>
+							<!-- 任务菜单 -->				
+							<li class="dropdown tasks-menu">
+								<!-- Menu Toggle Button -->				
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="fa fa-flag-o"></i>
+									<span class="label label-danger">9</span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="header">你有9个任务</li>
+									<li>
+
+										<ul class="menu">
+											<li>
+												<!-- Task item -->				
+												<a href="#">
+													<!-- 任务标题和进展文本 -->				
+													<h3>
+														设计一些按钮
+														<small class="pull-right">20%</small>
+													</h3>
+													<!-- 进度条 -->				
+													<div class="progress xs">
+														<!-- 改变CSS宽度属性模拟研究进展 -->				
+														<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+															<span class="sr-only">20% 完成</span>
+														</div>
+													</div>
+												</a>
+											</li>
+											<!-- end task item -->				
+										</ul>
+									</li>
+									<li class="footer">
+										<a href="#">查看所有任务</a>
+									</li>
+								</ul>
+							</li>
+							<!-- 用户帐户菜单 -->				
+							<li class="dropdown user user-menu">
+								<!-- Menu Toggle Button -->				
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<!-- 在导航栏的用户图像-->				
+									<img src="images/user2-160x160.jpg" class="user-image" alt="User Image">				
+									<!-- 隐藏的XS隐藏用户名在小型设备上只有图像出现. -->				
+									<span class="hidden-xs">Horan</span>
+								</a>
+								<ul class="dropdown-menu">
+									<!-- 菜单中的用户图像 -->				
+									<li class="user-header">
+										<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image">				
+										<p>
+											Horan---网站开发者
+											<small>自03月2012年</small>
+										</p>
+									</li>
+									<!-- Menu Body -->				
+									<li class="user-body">
+										<div class="col-xs-4 text-center">
+											<a href="#">粉丝</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">销售</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">朋友</a>
+										</div>
+									</li>
+									<!-- Menu Footer-->				
+									<li class="user-footer">
+										<div class="pull-left">
+											<a href="#" class="btn btn-default btn-flat">简介</a>
+										</div>
+										<div class="pull-right">
+											<a href="#" class="btn btn-default btn-flat">退出</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-custom-menu -->		
+				</div>
+				<!-- /.container-fluid -->		
+			</nav>
+		</header>
+		
+
+		<!-- 页面内容 -->
+		<div class="content-wrapper">
+			<div class="container">
+				<!-- Content Header (Page header) -->		
+				<section class="content-header">
+					<h1>
+						layers
+						<small>例1</small>
+					</h1>
+					<ol class="breadcrumb">
+						<li>
+							<a href="index.html"> <i class="fa fa-dashboard"></i>
+								首页
+							</a>
+						</li>
+						<li>
+							<a href="#">布局</a>
+						</li>
+						<li class="active">layers</li>
+					</ol>
+				</section>
+
+				<!-- Main content -->		
+				<section class="content">
+
+					<p>
+						<a href="http://layer.layui.com/api.html" target="_blank">layer弹出层帮助文档 http://layer.layui.com/api.html</a>
+					</p>
+					<p>
+						<h3 style="color:red;">从左至右分别是icon的 0 1 2 3 4 5 6</h3>
+						<img src="images/layericon.png"/>				
+					</p>
+					<div class="btn-toolbar" role="toolbar">
+						<div class="page-header">
+							<h1>信息框</h1>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="btn-group">
+									<button type="button" class="btn btn-default xxk1">例子1</button>
+									<button type="button" class="btn btn-default xxk2">例子2</button>
+									<button type="button" class="btn btn-default xxk3">例子3</button>
+									<button type="button" class="btn btn-default xxk4">例子4</button>
+									<button type="button" class="btn btn-default xxk5">例子5</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="page-header">
+							<h1>页面层/iframe层</h1>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="btn-group">
+									<button type="button" class="btn btn-default ymc1">页面层-自定义</button>
+									<button type="button" class="btn btn-default ymc2">页面层-图片</button>
+									<button type="button" class="btn btn-default ymc3">iframe-子父操作（暂无）</button>
+									<button type="button" class="btn btn-default ymc4">iframe-多媒体</button>
+									<button type="button" class="btn btn-default ymc5">iframe-禁滚动条</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="page-header">
+							<h1>加载层</h1>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="btn-group">
+									<button type="button" class="btn btn-default jzc1">默认</button>
+									<button type="button" class="btn btn-default jzc2">风格2</button>
+									<button type="button" class="btn btn-default jzc3">风格3</button>
+									<button type="button" class="btn btn-default jzc4">风格4</button>
+									<button type="button" class="btn btn-default jzc5">打酱油</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="page-header">
+							<h1>tips层</h1>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="btn-group">
+									<button type="button" class="btn btn-default tip1">上</button>
+									<button type="button" class="btn btn-default tip2">下</button>
+									<button type="button" class="btn btn-default tip3">左</button>
+									<button type="button" class="btn btn-default tip4">右</button>
+									<button type="button" class="btn btn-default tip5">允许多个</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="page-header">
+							<h1>其他演示</h1>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="btn-group">
+									<button type="button" class="btn btn-default qtc1">默认prompt</button>
+									<button type="button" class="btn btn-default qtc2">屏蔽浏览器滚动条</button>
+									<button type="button" class="btn btn-default qtc3">弹出即全屏</button>
+									<button type="button" class="btn btn-default qtc4">正上方</button>
+									<button type="button" class="btn btn-default qtc5">捕获页</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="box">
+						<h2 style="padding-bottom:20px;">扩展模块：图片查看器（相册层）</h2>
+						<div id="photosDemo" class="photos-demo">
+							<!-- layer-src表示大图  layer-pid表示图片id  src表示缩略图-->				
+							<img id="pic1" layer-src="http://static.oschina.net/uploads/space/2014/0516/012728_nAh8_1168184.jpg" layer-pid="" src="http://static.oschina.net/uploads/space/2014/0516/012728_nAh8_1168184.jpg" alt="layer宣传图" width="300" height="200">				
+							<img layer-src="http://sentsin.qiniudn.com/sentsinmy5.jpg" layer-pid="" src="http://sentsin.qiniudn.com/sentsinmy5.jpg" alt="我入互联网这五年" width="300" height="200">				
+							<img layer-src="" layer-pid="" src="http://sentsin.qiniudn.com/sentsin_39101a660cf4671b7ec297a74cc652c74152104f.jpg" alt="微摄影" width="300" height="200">				
+							<img layer-src="http://sentsin.qiniudn.com/sentsinsan01.jpg" layer-pid="" src="http://sentsin.qiniudn.com/sentsinsan01.jpg" alt="三清山" width="300" height="200">				
+							<img layer-src="http://ww2.sinaimg.cn/mw1024/5db11ff4jw1ehcyirr6quj20q00ex42w.jpg" layer-pid="" src="http://ww2.sinaimg.cn/mw1024/5db11ff4jw1ehcyirr6quj20q00ex42w.jpg" alt="国足" width="300" height="200">
+						</div>
+
+					</div>
+
+				</section>
+				<!-- /.content -->				
+			</div>
+			<!-- /.container -->		
+		</div>
+		<!-- /.content-wrapper -->		
+
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			
+			<!-- 默认为左 --> 
+			<strong>Copyright &copy; 2016
+				<a href="#">北京分豆科技股份有限公司</a> .
+			</strong> 
+			All rights reserved.
+		</footer>
+
+	</div>
+	<!-- ./wrapper -->
+
+
+	<!-- 所需的JS脚本 -->
+
+	<!-- jQuery 1.11.3 -->
+	<script src="js/jquery/jquery-1.11.3.min.js"></script>
+	<!-- Bootstrap 3.3.5 -->
+	<script src="library/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+	
+	<!-- Your javascript -->
+	<script src="js/app.min.js"></script>
+	<!-- <script src="js/docs.js"></script> -->
+
+	<!--本页脚本-->
+	<!-- layer -->
+	<script type="text/javascript" src="library/layer/layer.js" charset="utf-8"></script>
+	<script type="text/javascript" src="library/layer/extend/layer.ext.js" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		$(function(){
+			$(".xxk1").click(function(){
+				//信息框-例1
+				layer.alert('见到你真的很高兴', {icon: 6});
+				//可通过切换icon 数字切换图片，如想自定义，请参考layer官方文档。
+			});
+			$(".xxk2").click(function(){
+				//信息框-例2
+				layer.msg('你确定你很帅么？', {
+				  time: 0 //不自动关闭
+				  ,btn: ['必须啊', '丑到爆']
+				  ,yes: function(index){
+					layer.close(index);
+					layer.msg('是么 O.o', {
+					  icon: 6
+					  ,btn: ['嗷','嗷','嗷']
+					});
+				  }
+				});
+			});
+			$(".xxk3").click(function(){
+				//信息框-例3
+				layer.msg('这是最常用的吧');
+			});
+			$(".xxk4").click(function(){
+				//信息框-例4
+				layer.msg('不开心。。', {icon: 5});
+			});		
+			$(".xxk5").click(function(){
+				//信息框-例5
+				layer.msg('玩命卖萌中', function(){
+				//关闭后的操作
+				});
+			});
+			
+			
+			$(".ymc1").click(function(){
+				//页面层-自定义
+				layer.open({
+				  type: 1,
+				  title: false,
+				  closeBtn: 0,
+				  shadeClose: true,
+				  skin: 'yourclass',
+				  content: '自定义HTML内容'
+				});
+			});
+			$(".ymc2").click(function(){
+				layer.open({
+				  type: 1,
+				  title: false,
+				  closeBtn: 0,
+				  area: '516px',
+				  skin: 'layui-layer-nobg', //没有背景色
+				  shadeClose: true,
+				  content: $('#pic1')
+				});
+			});
+			$(".ymc3").click(function(){
+				//iframe层-父子操作
+				layer.open({
+				  type: 2,
+				  area: ['700px', '530px'],
+				  fix: false, //不固定
+				  maxmin: true,
+				  content: 'test/iframe.html'
+				});
+			});
+			$(".ymc4").click(function(){
+				//iframe层-多媒体
+				layer.open({
+				  type: 2,
+				  title: false,
+				  area: ['630px', '360px'],
+				  shade: 0.8,
+				  closeBtn: 0,
+				  shadeClose: true,
+				  content: 'http://player.youku.com/embed/XMjY3MzgzODg0'
+				});
+				layer.msg('点击任意处关闭');
+			});
+			$(".ymc5").click(function(){
+				//iframe层-禁滚动条
+				layer.open({
+				  type: 2,
+				  area: ['360px', '500px'],
+				  skin: 'layui-layer-rim', //加上边框
+				  content: ['http://layer.layui.com/mobile', 'no']
+				});
+			});
+			
+			
+			$(".jzc1").click(function(){
+				//加载层-默认风格
+				layer.load();
+				//此处演示关闭
+				setTimeout(function(){
+				  layer.closeAll('loading');
+				}, 2000);
+			});
+			$(".jzc2").click(function(){
+				//加载层-风格2
+				layer.load(1);
+				//此处演示关闭
+				setTimeout(function(){
+				  layer.closeAll('loading');
+				}, 2000);
+			});
+			$(".jzc3").click(function(){
+				//加载层-风格3
+				layer.load(2);
+				//此处演示关闭
+				setTimeout(function(){
+				  layer.closeAll('loading');
+				}, 2000);
+			});
+			$(".jzc4").click(function(){
+				//加载层-风格4
+				layer.msg('加载中', {icon: 16});
+			});
+			$(".jzc5").click(function(){
+				//打酱油
+				layer.msg('打个酱油', {icon: 4});
+			});
+			
+			
+			$(".tip1").click(function(){
+				//tips层-上
+				layer.tips('上', '.tip1', {
+				  tips: [1, '#0FA6D8'] //还可配置颜色
+				});
+			});
+			$(".tip2").click(function(){
+				//tips层-右
+				layer.tips('默认就是向右的', '.tip2');
+			});
+			$(".tip3").click(function(){
+				//tips层-下
+				layer.tips('下', '.tip3', {
+				  tips: 3
+				});
+			});
+			$(".tip4").click(function(){
+				//tips层-左
+				layer.tips('左边么么哒', '.tip4', {
+				  tips: [4, '#78BA32']
+				});
+			});
+			$(".tip5").click(function(){
+				//tips层-不销毁之前的
+				layer.tips('不销毁之前的', '.tip5', {
+				  tipsMore: true
+				});
+			});
+			
+			
+			
+			
+			$(".qtc1").click(function(){
+				//默认prompt   需要引入layer.ext.js
+				layer.prompt(function(val){
+				  layer.msg('得到了'+val);
+				});
+			});
+			$(".qtc2").click(function(){
+				//屏蔽浏览器滚动条
+				layer.open({
+				  content: '浏览器滚动条已锁',
+				  scrollbar: false
+				});
+			});
+			$(".qtc3").click(function(){
+				//弹出即全屏   需要引入layer.ext.js
+				var index = layer.open({
+				  type: 2,
+				  content: 'http://www.layui.com',
+				  area: ['300px', '195px'],
+				  maxmin: true
+				});
+				layer.full(index);
+			});
+			$(".qtc4").click(function(){
+				//正上方
+				layer.msg('灵活运用offset', {
+				  offset: 0,
+				  shift: 6
+				});
+			});
+			$(".qtc5").click(function(){
+				//捕获页
+				layer.open({
+				  type: 1,
+				  shade: false,
+				  title: false, //不显示标题
+				  content: $('.qtc2'), //捕获的元素
+				  cancel: function(index){
+					layer.close(index);
+					this.content.show();
+					layer.msg('捕获就是从页面已经存在的元素上，包裹layer的结构', {time: 5000, icon:6});
+				  }
+				});
+			});
+			
+			//相册层
+			//$.getJSON('test/photos.json?v='+new Date, function(json){
+			layer.ready(function(){ //为了layer.ext.js加载完毕再执行
+			  layer.photos({
+				//photos: json //格式见API文档手册页
+				photos:'#photosDemo'
+			  });
+			});
+		});
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+/*提分王提取组件*/
+/*按钮*/
+.x-button1{
+height: 40px;
+    background-image: url(../../images/button2.png);
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    color: #f7dca2;
+    font-size: 16px;
+    padding: 2px 30px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.x-button2{
+    height: 40px;
+    background-image: url(../../images/button3.png);
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    color: #f7dca2;
+    font-size: 16px;
+    padding: 2px 30px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.x-button1:hover,.x-button2:hover{
+    color: #000;
+}
+/*下拉框*/
+.x-select{width: 222px;height: 45px;background: url(../../images/xialaikuang.png) no-repeat;position: relative;cursor: pointer;}
+.x-selecttext{width: 166px;font-size: 18px;color: #FFF; padding: 9px 0 0 15px;white-space: nowrap;overflow: hidden;}
+.x-selectcontent{position: absolute;width: 210px;max-height:380px;overflow:auto;left: 5px;top:37px;background-color: #9b5f3f;display: none;}
+.x-selectcontent p{padding:13px 0; color: #FFFFFF;text-align: center;}
+.x-selectcontent p:hover,
+.x-selectcontent p:focus{
+  background-color: #661d01;
+}
+.x-button-myg{
+    width: 84px;
+    height: 44px;
+    background-image: url(../../images/anniumengyige.png);
+    background-color: transparent;
+    border: 0;
+}
+.x-button{
+    width: 72px;
+    height: 47px;
+    background-image: url(../../images/xuanzeanniu.png);
+    background-color: transparent;
+    border: 0;
+    color: #f7dca2;
+    font-size: 26px;
+    margin-right: 10px;
+}
+.x-button-hover{color:#cb4130}
+.x-button-click{color:#cb4130}
+.x-button-myg-hover{background-image: url(../../images/anniumengyige-hover.png) !important;}
+/*折叠菜单*/
+.xright-title{font-size: 32px;margin-top:26px;margin-left: -20px;color:#ffefc0;text-align: center;}
+.xright-rightmenu{width: 492px;height: 475px;background: url(../../images/candanbeijing.png);margin: 57px 0 0 98px;overflow: auto;}
+.xright-rightsys{width:222px;padding:10px 23px 0 45px; height:475px;margin: 57px 0 0 60px;}
+.xright-btn{width:447px; height: 85px;background: url(../../images/candan.png) no-repeat;margin: 12px auto 0 auto;text-align: center;color: #661d01;cursor: pointer;}
+.xright-btn h6{height: 20px;padding-top: 17px;font-size: 18px;}
+.xright-btn h5{height: 40px;font-size: 26px;padding-top: 25px;}
+.xright-subbtnbox{
+    width:420px;
+    margin: 0 auto;border-color: #eed7b6;   border-width: 0 2px 2px 2px;border-style: solid;
+    overflow: hidden;
+    padding: 0 10px 10px 0; 
+    display: none;
+}
+.xright-subbtn{width:192px;height:45px;padding-top:10px;margin:10px 0 0 10px; float: left;text-align: center;border: 2px solid #5D1D0E;cursor: pointer;}
+.xright-subbtnact{background-color: #9B5F3F;}
+.xright-subbtn:hover{background-color: #9B5F3F;}
+.titactive{
+    color: #000;
+}
+/*.xright-sys{height: 340px;}*/
+.xright-sysbtn{text-align: center;}
+.xright-systitle{margin-top:22px;height:34px;border-bottom: 1px solid #b59174;font-size: 22px;color: #5d1d0e;}
+.xright-systitle label{font-size:21px;vertical-align:bottom;line-height: 25px;}
+.xright-syscontent{height:265px;}
+.xright-syscontentline{
+    /*height: 35px; 为应对多文字换行撑开内容*/
+    color: #6b3120;font-size: 18px;
+    }
+.xright-syscontentline label{vertical-align:bottom;line-height: 31px;}
+.x-denglong{width:57px;height:99px;position: absolute;right: -22px;top: 72px;background: url(../../images/denglong.png) no-repeat;}

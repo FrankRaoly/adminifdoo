@@ -1,0 +1,972 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>sliders |</title>
+	<!-- 告诉浏览器响应屏幕宽度 -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- Bootstrap 3.3.5 -->
+	<link href="library/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Ionicons -->
+	 <link href="library/ionicons/css/ionicons.min.css" rel="stylesheet">
+	
+	<!-- 主体样式 -->
+	<link rel="stylesheet" href="css/Admin.min.css">
+	<!--换肤样式-->
+	<link rel="stylesheet" href="css/skins/_all-skins.min.css">
+
+	<!-- HTML5的插件和respond.js IE8支持HTML5元素和媒体查询 -->
+	<!--[if lt IE 9]>
+	<script src="js/Bsiehtc/html5shiv.min.js"></script>
+	<script src="js/Bsiehtc/respond.min.js"></script>
+	<![endif]-->
+
+	<!--本页相关-->
+	<!-- Ion Slider -->
+	<link rel="stylesheet" href="library/ionslider/ion.rangeSlider.css">
+	<!-- ion slider Nice -->
+	<link rel="stylesheet" href="library/ionslider/ion.rangeSlider.skinNice.css">
+	<!-- bootstrap slider -->
+	<link rel="stylesheet" href="library/bootstrap-slider/slider.css">
+
+	
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+		<!-- Main Header -->
+		<header class="main-header">
+
+			<!-- Logo -->
+			<a href="index.html" class="logo">
+				<!-- 迷你标志的侧边栏小50x50像素 -->
+				<span class="logo-mini"><b>I</b>fdoo</span>
+				<!-- 正常状态和移动设备的标识 -->
+				<span class="logo-lg"> <b>Admin</b>
+					Ifdoo
+				</span>
+			</a>
+
+			<!-- 标题导航栏 -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<!-- 侧边栏切换按钮-->
+				<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+					<span class="sr-only">切换导航</span>
+				</a>
+				<!-- 导航栏右键菜单 -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<!-- 消息菜单 -->
+						<li class="dropdown messages-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-envelope-o"></i>
+								<span class="label label-success">4</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="header">你有4条信息</li>
+								<li>
+
+									<ul class="menu">
+										<li>
+											<!-- start message -->
+											<a href="#">
+												<div class="pull-left">
+													<!-- User Image -->
+													<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image"></div>
+												<!-- 消息的标题和时间戳 -->
+												<h4>
+													官方团队
+													<small> <i class="fa fa-clock-o"></i>
+														5 mins
+													</small>
+												</h4>
+												<!-- The message -->
+												<p>为什么不买一个新的炫酷的主题?</p>
+											</a>
+										</li>
+										<!-- end message -->
+									</ul>
+									<!-- /.menu -->
+								</li>
+								<li class="footer">
+									<a href="#">看到所有的信息</a>
+								</li>
+							</ul>
+						</li>
+						<!-- /.messages-menu -->
+
+						<!-- 通知菜单 -->
+						<li class="dropdown notifications-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-bell-o"></i>
+								<span class="label label-warning">10</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="header">你有10个通知</li>
+								<li>
+
+									<ul class="menu">
+										<li>
+											<!-- start notification -->
+											<a href="#">
+												<i class="fa fa-users text-aqua"></i>
+												今天有5个新成员加入
+											</a>
+										</li>
+										<!-- end notification -->
+									</ul>
+								</li>
+								<li class="footer">
+									<a href="#">查看所有</a>
+								</li>
+							</ul>
+						</li>
+						<!-- 任务菜单 -->
+						<li class="dropdown tasks-menu">
+							<!-- Menu Toggle Button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-flag-o"></i>
+								<span class="label label-danger">9</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="header">你有9个任务</li>
+								<li>
+
+									<ul class="menu">
+										<li>
+											<!-- Task item -->
+											<a href="#">
+												<!-- 任务标题和进展文本 -->
+												<h3>
+													设计一些按钮
+													<small class="pull-right">20%</small>
+												</h3>
+												<!-- 进度条 -->
+												<div class="progress xs">
+													<!-- 改变CSS宽度属性模拟研究进展 -->
+													<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+														<span class="sr-only">20% 完成</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<!-- end task item -->
+									</ul>
+								</li>
+								<li class="footer">
+									<a href="#">查看所有任务</a>
+								</li>
+							</ul>
+						</li>
+						<!-- 用户帐户菜单 -->
+						<li class="dropdown user user-menu">
+							<!-- Menu Toggle Button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<!-- 在导航栏的用户图像-->
+								<img src="images/user2-160x160.jpg" class="user-image" alt="User Image">
+								<!-- 隐藏的XS隐藏用户名在小型设备上只有图像出现. -->
+								<span class="hidden-xs">Horan</span>
+							</a>
+							<ul class="dropdown-menu">
+								<!-- 菜单中的用户图像 -->
+								<li class="user-header">
+									<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image">
+									<p>
+										Horan---网站开发者
+										<small>自03月2012年</small>
+									</p>
+								</li>
+								<!-- Menu Body -->
+								<li class="user-body">
+									<div class="col-xs-4 text-center">
+										<a href="#">粉丝</a>
+									</div>
+									<div class="col-xs-4 text-center">
+										<a href="#">销售</a>
+									</div>
+									<div class="col-xs-4 text-center">
+										<a href="#">朋友</a>
+									</div>
+								</li>
+								<!-- Menu Footer-->
+								<li class="user-footer">
+									<div class="pull-left">
+										<a href="#" class="btn btn-default btn-flat">简介</a>
+									</div>
+									<div class="pull-right">
+										<a href="#" class="btn btn-default btn-flat">退出</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<!-- 控制栏切换按钮 -->
+						<li>
+							<a href="#" data-toggle="control-sidebar">
+								<i class="fa fa-gears"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--左侧菜单包含标识和侧边栏 -->
+		<aside class="main-sidebar">
+
+			<section class="sidebar">
+				<!-- 侧边栏用户面板（可选） -->
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="images/user2-160x160.jpg" class="img-circle" alt="User Image"></div>
+					<div class="pull-left info">
+						<p>Frank Horan</p>
+						<!-- Status -->
+						<a href="#">
+							<i class="fa fa-circle text-success"></i>
+							在线
+						</a>
+					</div>
+				</div>
+
+				<!-- 搜索（可选） -->
+				<form action="#" method="get" class="sidebar-form">
+					<div class="input-group">
+						<input type="text" name="q" class="form-control" placeholder="Search...">
+						<span class="input-group-btn">
+							<button type="submit" name="search" id="search-btn" class="btn btn-flat">
+								<i class="fa fa-search"></i>
+							</button>
+						</span>
+					</div>
+				</form>
+				<!-- /.search form -->
+
+				<!-- Sidebar Menu -->
+				<ul class="sidebar-menu">
+					
+					<li class="">
+						<a href="index.html">
+							<i class="fa fa-dashboard"></i>
+							<span>控制台</span>
+						</a>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-files-o"></i>
+							<span>布局选项</span>
+							<small class="label pull-right bg-green">new</small>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="top-nav.html">
+									<i class="fa fa-circle-o"></i>
+									顶部导航
+								</a>
+							</li>
+							<!-- <li>
+								<a href="boxed.html">
+									<i class="fa fa-circle-o"></i>
+									盒装
+								</a>
+							</li>
+							<li>
+								<a href="fixed.html">
+									<i class="fa fa-circle-o"></i>
+									固定宽度
+								</a>
+							</li>
+							<li>
+								<a href="collapsed-sidebar.html">
+									<i class="fa fa-circle-o"></i>
+									折叠侧边栏
+								</a>
+							</li> -->
+						</ul>
+					</li>
+					<!-- <li>
+						<a href="typography.html">
+							<i class="fa fa-th"></i>
+							<span> 文字排版 </span>
+							<span class="label label-primary pull-right">1</span>
+						</a>
+					</li> -->
+					
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-laptop"></i>
+							<span>UI 元素</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="element1.html">
+									<i class="fa fa-circle-o"></i>
+									元素1
+								</a>
+							</li>
+							<li>
+								<a href="element2.html">
+									<i class="fa fa-circle-o"></i>
+									元素2
+								</a>
+							</li>
+
+							<li>
+								<a href="general.html">
+									<i class="fa fa-circle-o"></i>
+									通用
+								</a>
+							</li>
+							<li>
+								<a href="icons.html">
+									<i class="fa fa-circle-o"></i>
+									图标
+								</a>
+							</li>
+							<li>
+								<a href="buttons.html">
+									<i class="fa fa-circle-o"></i>
+									按钮
+								</a>
+							</li>
+							<li>
+								<a href="sliders.html">
+									<i class="fa fa-circle-o"></i>
+									滑块
+								</a>
+							</li>
+							<li>
+								<a href="timeline.html">
+									<i class="fa fa-circle-o"></i>
+									时间表
+								</a>
+							</li>
+							<li>
+								<a href="modals.html">
+									<i class="fa fa-circle-o"></i>
+									模态框
+								</a>
+							</li>
+							<li>
+								<a href="layers.html">
+									<i class="fa fa-circle-o"></i>
+									layer弹框
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-pie-chart"></i>
+							<span>图表</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="chartjs.html">
+									<i class="fa fa-circle-o"></i>
+									ChartJS
+								</a>
+							</li>
+							<li>
+								<a href="echarts.html">
+									<i class="fa fa-circle-o"></i>
+									Echarts
+								</a>
+							</li>
+							<li>
+								<a href="Highcharts.html">
+									<i class="fa fa-circle-o"></i>
+									Highcharts
+								</a>
+							</li>
+							<li>
+								<a href="inline.html">
+									<i class="fa fa-circle-o"></i>
+									Inline charts
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-edit"></i>
+							<span>表单</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="generalEle.html">
+									<i class="fa fa-circle-o"></i>
+									通用元素
+								</a>
+							</li>
+							<li>
+								<a href="advanced.html">
+									<i class="fa fa-circle-o"></i>
+									高级元素
+								</a>
+							</li>
+							<li>
+								<a href="editors.html">
+									<i class="fa fa-circle-o"></i>
+									编辑器
+								</a>
+							</li>
+							<li>
+								<a href="upload.html">
+									<i class="fa fa-circle-o"></i>
+									文件上传
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-table"></i>
+							<span>表格</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="simple.html">
+									<i class="fa fa-circle-o"></i>
+									简单表
+								</a>
+							</li>
+							<li>
+								<a href="data.html">
+									<i class="fa fa-circle-o"></i>
+									数据表
+								</a>
+							</li>
+						</ul>
+					</li>
+					<!-- <li>
+						<a href="calendar.html">
+							<i class="fa fa-calendar"></i>
+							<span>日历</span>
+							<small class="label pull-right bg-red">3</small>
+						</a>
+					</li> -->
+					<!-- <li>
+						<a href="mailbox.html">
+							<i class="fa fa-envelope"></i>
+							<span>邮箱</span>
+							<small class="label pull-right bg-yellow">12</small>
+						</a>
+					</li> -->
+					<li class="treeview ">
+						<a href="#">
+							<i class="fa fa-folder"></i>
+							<span>实例</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu ">
+							<!-- <li>
+								<a href="invoice.html">
+									<i class="fa fa-circle-o"></i>
+									Invoice
+								</a>
+							</li> -->
+							<!-- <li>
+								<a href="profile.html">
+									<i class="fa fa-circle-o"></i>
+									Profile
+								</a>
+							</li> -->
+							<li>
+								<a href="login.html">
+									<i class="fa fa-circle-o"></i>
+									登录
+								</a>
+							</li>
+							<li>
+								<a href="register.html">
+									<i class="fa fa-circle-o"></i>
+									注册
+								</a>
+							</li>
+							<!-- <li>
+								<a href="lockscreen.html">
+									<i class="fa fa-circle-o"></i>
+									Lockscreen
+								</a>
+							</li> -->
+							<li>
+								<a href="404.html">
+									<i class="fa fa-circle-o"></i>
+									404 Error
+								</a>
+							</li>
+							<li>
+								<a href="500.html">
+									<i class="fa fa-circle-o"></i>
+									500 Error
+								</a>
+							</li>
+							<li class="">
+								<a href="blank.html">
+									<i class="fa fa-circle-o"></i>
+									Blank Page
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-share"></i>
+							<span>多级菜单</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li>
+								<a href="#">
+									<i class="fa fa-circle-o"></i>
+									一级菜单
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-circle-o"></i>
+									一级菜单
+									<i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="#">
+											<i class="fa fa-circle-o"></i>
+											二级菜单
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-circle-o"></i>
+											二级菜单
+											<i class="fa fa-angle-left pull-right"></i>
+										</a>
+										<ul class="treeview-menu">
+											<li>
+												<a href="#">
+													<i class="fa fa-circle-o"></i>
+													三级菜单
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-circle-o"></i>
+													三级菜单
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-circle-o"></i>
+									一级菜单
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="header">标签</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-circle-o text-red"></i>
+							<span>重要</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-circle-o text-yellow"></i>
+							<span>警告</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-circle-o text-aqua"></i>
+							<span>通知</span>
+						</a>
+					</li>
+				</ul>
+				<!-- /.sidebar-menu -->
+			</section>
+			<!-- /.sidebar -->
+		</aside>
+
+		<!-- 页面内容 -->
+		<div class="content-wrapper">
+			<!-- 内容头（页头） -->
+			<section class="content-header">
+				<h1>
+					sliders
+					<small>example</small>
+				</h1>
+				<ol class="breadcrumb">
+					<li>
+						<a href="#"> <i class="fa fa-dashboard"></i>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#">UI</a>
+					</li>
+					<li class="active">sliders</li>
+				</ol>
+			</section>
+
+			<!-- 主要内容-->
+			<section class="content">
+				<!-- 你的页面内容在这里 -->				
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="box box-primary">
+							<div class="box-header">
+								<h3 class="box-title">Ion Slider</h3>
+							</div>
+							<!-- /.box-header -->				
+							<div class="box-body">
+								<div class="row margin">
+									<div class="col-sm-6">
+										<input id="range_1" type="text" name="range_1" value=""></div>
+
+									<div class="col-sm-6">
+										<input id="range_2" type="text" name="range_2" value="1000;100000" data-type="double" data-step="500" data-postfix=" &euro;" data-from="30000" data-to="90000" data-hasgrid="true"></div>
+								</div>
+								<div class="row margin">
+									<div class="col-sm-6">
+										<input id="range_5" type="text" name="range_5" value=""></div>
+									<div class="col-sm-6">
+										<input id="range_6" type="text" name="range_6" value=""></div>
+								</div>
+								<div class="row margin">
+									<div class="col-sm-12">
+										<input id="range_4" type="text" name="range_4" value="10000;100000"></div>
+								</div>
+							</div>
+							<!-- /.box-body -->				
+						</div>
+						<!-- /.box -->				
+					</div>
+					<!-- /.col -->				
+				</div>
+				<!-- /.row -->				
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="box box-primary">
+							<div class="box-header">
+								<h3 class="box-title">Bootstrap Slider</h3>
+							</div>
+							<!-- /.box-header -->				
+							<div class="box-body">
+								<div class="row margin">
+									<div class="col-sm-6">
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red">				
+										<p>data-slider-id="red"</p>
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="blue">				
+										<p>data-slider-id="blue"</p>
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="green">				
+										<p>data-slider-id="green"</p>
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="yellow">				
+										<p>data-slider-id="yellow"</p>
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">				
+										<p>data-slider-id="aqua"</p>
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">				
+										<p style="margin-top: 10px">data-slider-id="purple"</p>
+									</div>
+									<div class="col-sm-6 text-center">
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red">				
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="blue">				
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="green">				
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="yellow">				
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">				
+										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple"></div>
+								</div>
+							</div>
+							<!-- /.box-body -->				
+						</div>
+						<!-- /.box -->				
+					</div>
+					<!-- /.col -->				
+				</div>
+				<!-- /.row -->				
+			</section>
+			<!-- /.content -->
+		</div>
+		<!-- /.content-wrapper -->
+
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			
+			<!-- 默认为左 --> 
+			<strong>Copyright &copy; 2016
+				<a href="#">北京分豆科技股份有限公司</a> .
+			</strong> 
+			All rights reserved.
+		</footer>
+
+
+		<!-- 控制栏 -->
+		
+		<aside class="control-sidebar control-sidebar-dark">
+			<!-- Create the tabs -->		
+			<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+				<li>
+					<a href="#control-sidebar-home-tab" data-toggle="tab"> <i class="fa fa-home"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#control-sidebar-settings-tab" data-toggle="tab">
+						<i class="fa fa-gears"></i>
+					</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->		
+			<div class="tab-content">
+				<!-- Home tab content -->		
+				<div class="tab-pane" id="control-sidebar-home-tab">
+					<h3 class="control-sidebar-heading">最近的活动</h3>
+					<ul class="control-sidebar-menu">
+						<li>
+							<a href="javascript::;">
+								<i class="menu-icon fa fa-birthday-cake bg-red"></i>
+								<div class="menu-info">
+									<h4 class="control-sidebar-subheading">生日</h4>
+									<p>四月二十四</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript::;">
+								<i class="menu-icon fa fa-user bg-yellow"></i>
+								<div class="menu-info">
+									<h4 class="control-sidebar-subheading">电话</h4>
+									<p>555-1234</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript::;">
+								<i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+								<div class="menu-info">
+									<h4 class="control-sidebar-subheading">邮件</h4>
+									<p>nora163@163.com</p>
+								</div>
+							</a>
+						</li>
+						
+					</ul>
+					<!-- /.control-sidebar-menu -->		
+
+					<h3 class="control-sidebar-heading">任务进展</h3>
+					<ul class="control-sidebar-menu">
+						<li>
+							<a href="javascript::;">
+								<h4 class="control-sidebar-subheading">
+									自定义模板设计
+									<span class="label label-danger pull-right">70%</span>
+								</h4>
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript::;">
+								<h4 class="control-sidebar-subheading">
+									更新简历
+									<span class="label label-success pull-right">95%</span>
+								</h4>
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-success" style="width: 95%"></div>
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javascript::;">
+								<h4 class="control-sidebar-subheading">
+									后端框架
+									<span class="label label-primary pull-right">68%</span>
+								</h4>
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<!-- /.control-sidebar-menu -->		
+
+				</div>
+				
+				<!-- /.tab-pane -->		
+
+				<!-- Settings tab content -->		
+				<div class="tab-pane" id="control-sidebar-settings-tab">
+					<form method="post">
+						<h3 class="control-sidebar-heading">一般设置</h3>
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								面板使用报告
+								<input type="checkbox" class="pull-right" checked=""></label>
+							<p>关于此一般设置选项的一些信息</p>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								允许邮件重定向
+								<input type="checkbox" class="pull-right" checked=""></label>
+							<p>其他组的选项是可用的</p>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								揭露作者姓名
+								<input type="checkbox" class="pull-right" checked=""></label>
+							<p>允许用户在博客文章中显示自己的名字</p>
+						</div>
+						<!-- /.form-group -->		
+
+						<h3 class="control-sidebar-heading">聊天设置</h3>
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								给我看在线
+								<input type="checkbox" class="pull-right" checked=""></label>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								关闭通知
+								<input type="checkbox" class="pull-right"></label>
+						</div>
+						<!-- /.form-group -->		
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								删除聊天记录
+								<a href="javascript::;" class="text-red pull-right">
+									<i class="fa fa-trash-o"></i>
+								</a>
+							</label>
+						</div>
+						<!-- /.form-group -->		
+					</form>
+				</div>
+				<!-- /.tab-pane -->		
+			</div>
+		</aside>
+		<!-- /.control-sidebar -->
+		<!-- 添加栏的背景。这个div必须放控制栏后 -->
+		<div class="control-sidebar-bg"></div>
+	</div>
+	<!-- ./wrapper -->
+
+
+	<!-- 所需的JS脚本 -->
+
+	<!-- jQuery 1.11.3 -->
+	<script src="js/jquery/jquery-1.11.3.min.js"></script>
+	<!-- Bootstrap 3.3.5 -->
+	<script src="library/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+	
+	<script src="js/app.min.js"></script>
+
+	<!-- SlimScroll 漂亮的虚拟滚动条 -->
+    <!-- <script src="library/slimScroll/jquery.slimscroll.min.js"></script> -->
+    <!-- FastClick 消除点击延时-移动设备使用 -->
+    <script src="library/fastclick/fastclick.min.js"></script>
+
+	<script src="js/demo.js"></script>
+
+	<script src="js/docs.js"></script>
+
+	
+
+	<!-- 本页所需的脚本 -->
+
+	<!-- Ion Slider -->
+    <script src="library/ionslider/ion.rangeSlider.min.js"></script>
+    <!-- Bootstrap slider -->
+    <script src="library/bootstrap-slider/bootstrap-slider.js"></script>
+    <script>
+      $(function () {
+        /* BOOTSTRAP SLIDER */
+        $('.slider').slider();
+
+        /* ION SLIDER */
+        $("#range_1").ionRangeSlider({
+          min: 0,
+          max: 5000,
+          from: 1000,
+          to: 4000,
+          type: 'double',
+          step: 1,
+          prefix: "$",
+          prettify: false,
+          hasGrid: true
+        });
+        $("#range_2").ionRangeSlider();
+
+        $("#range_5").ionRangeSlider({
+          min: 0,
+          max: 10,
+          type: 'single',
+          step: 0.1,
+          postfix: " mm",
+          prettify: false,
+          hasGrid: true
+        });
+        $("#range_6").ionRangeSlider({
+          min: -50,
+          max: 50,
+          from: 0,
+          type: 'single',
+          step: 1,
+          postfix: "°",
+          prettify: false,
+          hasGrid: true
+        });
+
+        $("#range_4").ionRangeSlider({
+          type: "single",
+          step: 100,
+          postfix: " light years",
+          from: 55000,
+          hideMinMax: true,
+          hideFromTo: false
+        });
+        $("#range_3").ionRangeSlider({
+          type: "double",
+          postfix: " miles",
+          step: 10000,
+          from: 25000000,
+          to: 35000000,
+          onChange: function (obj) {
+            var t = "";
+            for (var prop in obj) {
+              t += prop + ": " + obj[prop] + "\r\n";
+            }
+            $("#result").html(t);
+          },
+          onLoad: function (obj) {
+            //
+          }
+        });
+      });
+    </script>
+
+</body>
+</html>

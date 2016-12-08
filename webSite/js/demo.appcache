@@ -1,0 +1,15 @@
+﻿CACHE MANIFEST
+# 2016-04-08 v1.0.2   该部分定义要缓存的css  js 文件 和图片等。  井号为注释
+../images/dog.jpg
+../library/bootstrap-3.3.5/css/bootstrap.css
+../library\bootstrap-3.3.5\js\bootstrap.js
+#/logo.gif
+#/main.js
+
+NETWORK:
+# 该部分制定不缓存的内容  可以用 *来制定所有内容都不缓存
+#login.asp
+
+FALLBACK:
+#下面的 FALLBACK 小节规定如果无法建立因特网连接，则用 "offline.html" 替代 /html5/ 目录中的所有文件：
+#/html5/ /404.html
