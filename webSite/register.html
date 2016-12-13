@@ -1,92 +1,125 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-  <!--支持IE-->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>注册 |</title>
-	<!-- 告诉浏览器响应屏幕宽度 禁用缩放-->
-	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<!-- Bootstrap 3.3.5 -->
-	<link href="library/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-	<!-- Ionicons -->
-	 <link href="library/ionicons/css/ionicons.min.css" rel="stylesheet">
-	
-	<!-- 主体样式 -->
-	<link rel="stylesheet" href="css/Admin.min.css">
-	 <!-- iCheck -->
-    <link rel="stylesheet" href="library/iCheck/square/blue.css">
 
-	<!-- HTML5的插件和respond.js IE8支持HTML5元素和媒体查询 -->
-	<!--[if lt IE 9]>
+	<head>
+		<meta charset="utf-8">
+		<!--支持IE-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>注册 |</title>
+		<!-- 告诉浏览器响应屏幕宽度 禁用缩放-->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- Bootstrap 3.3.5 -->
+		<link href="library/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Ionicons -->
+		<link href="library/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+		<!-- 主体样式 -->
+		<link rel="stylesheet" href="css/Admin.min.css">
+		<!-- iCheck -->
+		<link rel="stylesheet" href="library/iCheck/square/blue.css">
+
+		<!-- HTML5的插件和respond.js IE8支持HTML5元素和媒体查询 -->
+		<!--[if lt IE 9]>
 	<script src="js/Bsiehtc/html5shiv.min.js"></script>
 	<script src="js/Bsiehtc/respond.min.js"></script>
 	<![endif]-->
 
-  <!--本页样式-->
-  <link rel="stylesheet" href="css/IfdLogin.css">
+		<!--本页样式-->
+		<link rel="stylesheet" href="css/IfdLogin.css">
 
-</head>
-  <body class="hold-transition register-page">
-    <div class="register-box">
-      <div class="register-logo">
-        <a href="index.html"><b>Admin</b>Ifdoo</a>
-      </div>
+	</head>
 
-      <div class="register-box-body">
-        <p class="login-box-msg">注册新会员</p>
-        <form action="index.html" method="post">
-          <div class="form-group has-feedback">
-            <input type="text" class="form-control" placeholder="Full name">
-            <span class="glyphicon glyphicon-user form-control-feedback"></span>
-          </div>
-          <div class="form-group has-feedback">
-            <input type="email" class="form-control" placeholder="Email">
-            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-          </div>
-          <div class="form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Password">
-            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-          </div>
-          <div class="form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Retype password">
-            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
-          </div>
-          <div class="row">
-            <div class="col-xs-8">
-              <div class="checkbox icheck">
-                <label>
-                  <input type="checkbox">  我同意 <a href="#">条款</a>
-                </label>
-              </div>
-            </div><!-- /.col -->
-            <div class="col-xs-4">
-              <button type="submit" class="btn btn-primary btn-block btn-flat">注册</button>
-            </div><!-- /.col -->
-          </div>
-        </form>
+	<body class="hold-transition register-page">
 
-        
-        <a href="login.html" class="text-center">我已经有会员</a>
-      </div><!-- /.form-box -->
-    </div><!-- /.register-box -->
+		<div class="container web-body">
+			<div class="row">
+				<div class="col-lg-5 col-xs-12 boxlogin no-padding">
+					<div class="panel panel-default well no-margin">
+						<div class="panel-heading" style="height: 50px;">
+							<div class="panel-title" style="text-align: left;">用户注册</div>
+						</div>
+						<div style="padding-top:30px" class="panel-body">
+							<form id="registerForm" class="form-horizontal" role="form" method="post">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<div class="input-group">
+											<span class="input-group-addon">
+			                                    <i class="glyphicon glyphicon-user"></i>
+			                                </span>
+											<input id="email" type="text" class="form-control" name="email" placeholder="邮箱" autocomplete="off">
+										</div>
+									</div>
+								</div>
 
-    <!-- jQuery 1.11.3 -->
-	<script src="js/jquery/jquery-1.11.3.min.js"></script>
-	<!-- Bootstrap 3.3.5 -->
-	<script src="library/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-    <!-- iCheck -->
-    <script src="library/iCheck/icheck.min.js"></script>
-    <script>
-      $(function () {
-        $('input').iCheck({
-          checkboxClass: 'icheckbox_square-blue',
-          radioClass: 'iradio_square-blue',
-          increaseArea: '20%' // optional
-        });
-      });
-    </script>
-  </body>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<div class="input-group">
+											<span class="input-group-addon">
+			                                    <i class="glyphicon glyphicon-lock"></i>
+			                                </span>
+											<input type="password" class="form-control" name="password" placeholder="密码" autocomplete="off">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<div class="input-group">
+											<span class="input-group-addon">
+			                                    <i class="glyphicon glyphicon-lock"></i>
+			                                </span>
+											<input id="confirmPass" type="password" data-equals="password" name="confirmPassword" class="form-control" placeholder="确认密码" autocomplete="off">
+										</div>
+									</div>
+								</div>
+								<div style="margin-bottom: 15px; width: auto;" class="form-group">
+									<div id="verify" class="col-sm-12">
+										<div class="input-group">
+											<span class="input-group-addon">
+			                                    <i class="glyphicon glyphicon-transfer"></i>
+			                                </span>
+											<input type="text" class="form-control" name="verify" placeholder="验证码" autocomplete="off" />
+											<img class="captcha" src="images/login.jpg" alt="验证码" />
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12 ">
+										<button type="submit" class="btn btn-primary btn-block">同意协议并注册</button>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<div style="border-top: 1px solid #888; padding-top:15px;">
+											<a href="login.html" class="btn btn-info rg-link">我已经有会员</a>
+											<a class="rg-link" href="javascript:;" target="_blank">《网站用户协议》</a>
+										</div>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery 1.11.3 -->
+		<script src="js/jquery/jquery-1.11.3.min.js"></script>
+		<!-- Bootstrap 3.3.5 -->
+		<script src="library/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+		<!-- iCheck -->
+		<script src="library/iCheck/icheck.min.js"></script>
+		<script>
+			$(function() {
+				$('input').iCheck({
+					checkboxClass: 'icheckbox_square-blue',
+					radioClass: 'iradio_square-blue',
+					increaseArea: '20%' // optional
+				});
+			});
+		</script>
+	</body>
+
 </html>
