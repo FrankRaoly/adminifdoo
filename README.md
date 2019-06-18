@@ -4,4 +4,4 @@
 
 添加组件如下图：
 
-![image](https://github.com/FrankRaoly/adminifdoo/raw/master/webSite/images/lib.jpg)
+![image](https://github.com/FrankRaoly/adminifdoo/raw/master/images/lib.jpg)
